@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstPersonControllerScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public CharacterController characterController;
     public float speed = 10f;
@@ -41,7 +41,7 @@ public class FirstPersonControllerScript : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }

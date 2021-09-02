@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class FirstPersonCameraMovement : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     public Transform body;
