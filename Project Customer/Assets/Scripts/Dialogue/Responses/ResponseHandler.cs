@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ResponseHandler : MonoBehaviour
 {
-    [SerializeField] private RectTransform box;
-    [SerializeField] private RectTransform container;
+    private RectTransform box;
+    private RectTransform container;
     [SerializeField] private RectTransform buttonTemplate;
 
     private DialogueUI dialogueUI;
@@ -16,6 +16,9 @@ public class ResponseHandler : MonoBehaviour
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUI>();
+        //get object refs
+        box = transform.Find("ResponseBox").GetComponent<RectTransform>();
+        container = box.Find("ResponseContainer").GetComponent<RectTransform>();
     }
 
     public void ShowResponses(Response[] responses)
