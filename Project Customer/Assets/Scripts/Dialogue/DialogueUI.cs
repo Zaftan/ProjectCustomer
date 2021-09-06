@@ -6,10 +6,14 @@ public class DialogueUI : MonoBehaviour
 {
     private GameObject dialogueBox;
     [SerializeField] private TMP_Text label;
-    [SerializeField] private DialogueData testData;
+    
+    public bool isOpen { get; private set; }
 
     private ResponseHandler responseHandler;
     private TypewriterEffect writeEffect;
+
+    //temp activator reference
+    private IInteractable activator;
 
     private void Start()
     {
@@ -19,12 +23,14 @@ public class DialogueUI : MonoBehaviour
         dialogueBox = transform.Find("DialogueBox").gameObject;
         //start with dialogue closed
         EndDialogue();
-        //temp test dialogue
-        ShowDialogue(testData);
     }
 
     public void ShowDialogue(DialogueData data)
     {
+        //unlock cursor
+        Cursor.lockState = CursorLockMode.None;
+        //update vars
+        isOpen = true;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(data));
     }
@@ -33,11 +39,15 @@ public class DialogueUI : MonoBehaviour
     {
         for (int i = 0; i < data.dialogueText.Length; i++)
         {
-            string dialogue = data.dialogueText[i];
-            yield return writeEffect.Run(dialogue, label);
+            string dialogue = data.dialogueText[i].dialogue;
+            yield return RunTypingEffect(dialogue);
+            label.text = dialogue;
 
             //skip last click if there are responses
             if (i == data.dialogueText.Length - 1 && data.HasResponses) break;
+
+            //wait 1 additional frame to make sure type effect skip doesn't advance text
+            yield return null;
             yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         }
 
@@ -51,8 +61,27 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    private IEnumerator RunTypingEffect(string dialogue)
     {
+        writeEffect.Run(dialogue, label);
+
+        while (writeEffect.isRunning)
+        {
+            yield return null;
+            //allow to skip type effect
+            if (Input.GetMouseButtonDown(0))
+            {
+                writeEffect.Stop();
+            }
+        }
+    }
+
+    public void EndDialogue()
+    {
+        //lock cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        //update vars
+        isOpen = false;
         dialogueBox.SetActive(false);
         label.text = string.Empty;
     }

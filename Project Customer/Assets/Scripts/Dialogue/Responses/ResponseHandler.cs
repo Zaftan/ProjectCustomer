@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class ResponseHandler : MonoBehaviour
 {
-    [SerializeField] private RectTransform box;
-    [SerializeField] private RectTransform container;
+    private RectTransform box;
+    private RectTransform container;
     [SerializeField] private RectTransform buttonTemplate;
 
     private DialogueUI dialogueUI;
 
-    private List<GameObject> tempButtons = new List<GameObject>();
+    private readonly List<GameObject> tempButtons = new List<GameObject>();
 
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUI>();
+        //get object refs
+        box = transform.Find("ResponseBox").GetComponent<RectTransform>();
+        container = box.Find("ResponseContainer").GetComponent<RectTransform>();
     }
 
     public void ShowResponses(Response[] responses)
@@ -45,7 +48,18 @@ public class ResponseHandler : MonoBehaviour
             Destroy(button);
         }
         tempButtons.Clear();
-        //activate button event
-        dialogueUI.ShowDialogue(response.data);
+
+        //only show response if it has dialogue
+        if (response.data)
+        {
+            //activate button events
+            response.onResponse?.Invoke();
+            dialogueUI.ShowDialogue(response.data);
+        }
+        else
+        {
+            //end dialogue
+            dialogueUI.EndDialogue();
+        }
     }
 }
