@@ -6,11 +6,14 @@ public class DialogueUI : MonoBehaviour
 {
     private GameObject dialogueBox;
     [SerializeField] private TMP_Text label;
-
+    
     public bool isOpen { get; private set; }
 
     private ResponseHandler responseHandler;
     private TypewriterEffect writeEffect;
+
+    //temp activator reference
+    private IInteractable activator;
 
     private void Start()
     {
@@ -36,7 +39,7 @@ public class DialogueUI : MonoBehaviour
     {
         for (int i = 0; i < data.dialogueText.Length; i++)
         {
-            string dialogue = data.dialogueText[i];
+            string dialogue = data.dialogueText[i].dialogue;
             yield return RunTypingEffect(dialogue);
             label.text = dialogue;
 
