@@ -9,6 +9,12 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         player.dialogueUI.ShowDialogue(data);
     }
 
+    //change dialogue object at runtime method
+    public void UpdateDialogueData(DialogueData data)
+    {
+        this.data = data;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))

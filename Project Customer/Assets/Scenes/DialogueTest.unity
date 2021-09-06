@@ -618,6 +618,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.02
+  punctuations:
+  - punctuations: 2e0021003f00
+    waitTime: 0.6
+  - punctuations: 2c003b003a00
+    waitTime: 0.3
 --- !u!114 &1042295973
 MonoBehaviour:
   m_ObjectHideFlags: 0

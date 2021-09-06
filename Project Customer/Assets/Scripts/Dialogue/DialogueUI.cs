@@ -73,7 +73,7 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
         //lock cursor
         Cursor.lockState = CursorLockMode.Locked;

@@ -11,7 +11,7 @@ public class ResponseHandler : MonoBehaviour
 
     private DialogueUI dialogueUI;
 
-    private List<GameObject> tempButtons = new List<GameObject>();
+    private readonly List<GameObject> tempButtons = new List<GameObject>();
 
     private void Start()
     {
@@ -48,7 +48,18 @@ public class ResponseHandler : MonoBehaviour
             Destroy(button);
         }
         tempButtons.Clear();
-        //activate button event
-        dialogueUI.ShowDialogue(response.data);
+
+        //only show response if it has dialogue
+        if (response.data)
+        {
+            //activate button events
+            response.onResponse?.Invoke();
+            dialogueUI.ShowDialogue(response.data);
+        }
+        else
+        {
+            //end dialogue
+            dialogueUI.EndDialogue();
+        }
     }
 }

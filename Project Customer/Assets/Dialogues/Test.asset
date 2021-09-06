@@ -33,3 +33,5 @@ MonoBehaviour:
     dialogueData: {fileID: 11400000, guid: 2ff230ff1b2850746a74ef85e6289318, type: 2}
   - responseTitle: No
     dialogueData: {fileID: 11400000, guid: 5b75e3dfe9ae02c44a8bf504fb89fade, type: 2}
+  - responseTitle: wha?
+    dialogueData: {fileID: 0}
