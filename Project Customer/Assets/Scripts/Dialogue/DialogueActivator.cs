@@ -4,7 +4,11 @@ using UnityEngine.Events;
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueData data;
+
+    //outline stuff
     private Outline outline;
+    [Header("Outline object when in range")]
+    [SerializeField] private bool useOutline;
 
     [Header("Event fired on interaction")]
     [SerializeField] private UnityEvent interactEvent;
@@ -46,7 +50,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         {
             player.interactable = this;
             //outline object
-            outline.enabled = true;
+            ToggleOutline();
         }
     }
 
@@ -58,8 +62,16 @@ public class DialogueActivator : MonoBehaviour, IInteractable
             {
                 player.interactable = null;
                 //remove object outline
-                outline.enabled = false;
+                ToggleOutline();
             }
+        }
+    }
+
+    private void ToggleOutline()
+    {
+        if (useOutline)
+        {
+            outline.enabled = !outline.enabled;
         }
     }
 }
