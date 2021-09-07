@@ -14,9 +14,26 @@ public class DialogueData : ScriptableObject
     public bool HasResponses => responses != null && responses.Length > 0;
 
     [System.Serializable]
+    public enum Expression
+    {
+        Happy,
+        Neutral,
+        Sad
+    }
+    [System.Serializable]
+    public enum Speaker
+    {
+        Investigator,
+        Mom,
+        GhostBoy
+    }
+
+    //data struct
+    [System.Serializable]
     public struct DialogueMessage
     {
         [SerializeField] [TextArea] public string dialogue;
-        [SerializeField] public string test;
+        [SerializeField] public Expression expression;
+        [SerializeField] public Speaker speaker;
     }
 }

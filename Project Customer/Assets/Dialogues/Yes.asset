@@ -13,4 +13,20 @@ MonoBehaviour:
   m_Name: Yes
   m_EditorClassIdentifier: 
   dialogue:
-  - Thou hath uttered that thy agree
+  - dialogue: 'YES...
+
+      I think'
+    expression: 0
+    speaker: 0
+  - dialogue: 'I am very sad.
+
+      I''m also the mother of ghost boy :('
+    expression: 2
+    speaker: 1
+  - dialogue: 'I died.
+
+
+      eh, ok?'
+    expression: 1
+    speaker: 2
+  responses: []
