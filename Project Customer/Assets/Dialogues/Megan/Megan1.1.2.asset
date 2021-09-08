@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Megan1.1.2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'I was called by his friend Fred and was asked to go to the scene I
+      went to the scene,
+
+      I couldn''t believe what happened.'
+    expression: 2
+    speaker: 1
+  - dialogue: I could see that the car was fully wrecked on the passengers side as
+      it was slammed into a tree.
+    expression: 2
+    speaker: 1
+  - dialogue: 'I was almost sure that no one could have survived that
+
+'
+    expression: 2
+    speaker: 1
+  - dialogue: 'the drivers side seemed to have little damage compared to the passangers
+      seat.
+
+'
+    expression: 2
+    speaker: 1
+  - dialogue: ' The windscreen was completely shattered.'
+    expression: 2
+    speaker: 1
+  - dialogue: I understand, thank you for sharing.
+    expression: 1
+    speaker: 0
+  responses:
+  - responseTitle: Do you have Fred's phone number? he might know more about the
+      evening itself
+    dialogueData: {fileID: 11400000, guid: 25afa604d72f31e47a95277c7a7c9205, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: Could you tell me what you could see on the scene?
+    dialogueData: {fileID: 11400000, guid: 70bd8680946bcb641ad6723ffa9eeba3, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

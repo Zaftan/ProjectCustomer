@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Megan1.1.3
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: He might know more since she went to his Bar, but you'll have to ask
+      him yourself
+    expression: 1
+    speaker: 1
+  responses:
+  - responseTitle: Do you have Bob's number?
+    dialogueData: {fileID: 11400000, guid: 991f4770812d8f140bab8dd67415732b, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: Alright thank you
+    dialogueData: {fileID: 11400000, guid: ef325197817514e418fb4fef93e082e9, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
