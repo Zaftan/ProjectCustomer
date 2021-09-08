@@ -12,5 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
   m_Name: Megan1.2
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - dialogue: 'She went with Fred, a very good friend of hers
+
+'
+    expression: 1
+    speaker: 1
+  responses:
+  - responseTitle: Could I get Fred's Phone number? he might know more about what
+      happened before.
+    dialogueData: {fileID: 11400000, guid: bd88cd12484277e418c6df480afc5f54, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: How did you find out that it happened?
+    dialogueData: {fileID: 11400000, guid: af222b8801bfba1408e9d93a55033d20, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

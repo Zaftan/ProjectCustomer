@@ -12,5 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
   m_Name: Megan1.1.1
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - dialogue: 'once I was there I couldn''t see Veronica and saw 2 ambulances drive
+      off. '
+    expression: 2
+    speaker: 1
+  responses:
+  - responseTitle: Could I get Fred's Phone number? he might know more about what
+      happened before.
+    dialogueData: {fileID: 11400000, guid: 554f47c0375a52b4886498e843e4ab21, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: How did you find out that it happened?
+    dialogueData: {fileID: 11400000, guid: e7aa222971ab777468a294f503bd8d84, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

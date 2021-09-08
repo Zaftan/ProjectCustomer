@@ -10,26 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Megan1.1
+  m_Name: Megan1.2.FredPhone
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: She went to Bob's bar, there she went drinking, after that she did
-      not come home.
-    expression: 0
-    speaker: 0
+  - dialogue: Yes of course, here you go
+    expression: 1
+    speaker: 1
+  - dialogue: '*You now have Fred''s Phone number*'
+    expression: 1
+    speaker: 2
   responses:
-  - responseTitle: What happened after that?
-    dialogueData: {fileID: 11400000, guid: b5986d9c77369e6468ad36c9f00f20c7, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
   - responseTitle: How did you find out that it happened?
     dialogueData: {fileID: 11400000, guid: e7aa222971ab777468a294f503bd8d84, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - responseTitle: Do you know if Bob knows anything?
-    dialogueData: {fileID: 11400000, guid: caed309c4fe31a94ab2ddb1ef8321c84, type: 2}
     responseEvent:
       m_PersistentCalls:
         m_Calls: []

@@ -10,18 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Megan1.1.1.FredPhone
+  m_Name: Megan1.1.2.2
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Yes of course, here you go
+  - dialogue: 'Yes I think I can
+
+      *She shows you some pictures of the crash*
+      //insert polaroids
+
+      In the picture you can spot the beer glass you have
+      in your office '
     expression: 1
     speaker: 1
-  - dialogue: '*You now have Fred''s Phone number*'
+  - dialogue: Thank you, I am gonna get to the bottom of this.
     expression: 1
-    speaker: 2
+    speaker: 0
   responses:
-  - responseTitle: How did you find out that it happened?
-    dialogueData: {fileID: 11400000, guid: e7aa222971ab777468a294f503bd8d84, type: 2}
+  - responseTitle: I think you gave all that you need
+    dialogueData: {fileID: 11400000, guid: 44fca1fb6f333fc47a3acdc50406e650, type: 2}
     responseEvent:
       m_PersistentCalls:
         m_Calls: []

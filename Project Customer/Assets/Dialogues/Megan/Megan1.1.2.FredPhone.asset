@@ -12,5 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
   m_Name: Megan1.1.2.FredPhone
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - dialogue: Yes of course, here you go
+    expression: 1
+    speaker: 1
+  - dialogue: '*You now have Fred''s Phone number*'
+    expression: 1
+    speaker: 2
+  - dialogue: Anything else you'd like to know?
+    expression: 1
+    speaker: 2
+  responses:
+  - responseTitle: Could you tell what you saw at the scene?
+    dialogueData: {fileID: 11400000, guid: 70bd8680946bcb641ad6723ffa9eeba3, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

@@ -17,7 +17,7 @@ MonoBehaviour:
     expression: 0
     speaker: 0
   responses:
-  - responseTitle: Do you know what bar Veronica  went to?
+  - responseTitle: Do you know what bar Veronica went to?
     dialogueData: {fileID: 11400000, guid: 6506528cd41f9214f9411f49a05e7d5d, type: 2}
     responseEvent:
       m_PersistentCalls:
