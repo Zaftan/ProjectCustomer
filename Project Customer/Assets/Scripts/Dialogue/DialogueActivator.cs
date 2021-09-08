@@ -8,7 +8,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     //outline stuff
     private Outline outline;
     [Header("Outline object when in range")]
-    [SerializeField] private bool useOutline;
+    [SerializeField] private bool useOutline = false;
 
     [Header("Event fired on interaction")]
     [SerializeField] private UnityEvent interactEvent;
@@ -23,7 +23,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact(PlayerMovement player)
     {
-        interactEvent?.Invoke();
+        //set activator reference
+        player.dialogueUI.activator = this;
         player.dialogueUI.ShowDialogue(data);
     }
 

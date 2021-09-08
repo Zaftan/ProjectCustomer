@@ -13,7 +13,7 @@ public class DialogueUI : MonoBehaviour
     private TypewriterEffect writeEffect;
 
     //temp activator reference
-    private IInteractable activator;
+    public IInteractable activator;
 
     private void Start()
     {
@@ -29,6 +29,8 @@ public class DialogueUI : MonoBehaviour
     {
         //unlock cursor
         Cursor.lockState = CursorLockMode.None;
+        //activate event
+        activator?.OnInteract();
         //update vars
         isOpen = true;
         dialogueBox.SetActive(true);
@@ -80,6 +82,9 @@ public class DialogueUI : MonoBehaviour
     {
         //lock cursor
         Cursor.lockState = CursorLockMode.Locked;
+        //activate event
+        activator?.OnEndInteract();
+        activator = null;
         //update vars
         isOpen = false;
         dialogueBox.SetActive(false);
