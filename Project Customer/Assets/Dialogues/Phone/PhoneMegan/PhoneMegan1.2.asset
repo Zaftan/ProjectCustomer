@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: PhoneMegan1.2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: and saw your picture again and was wondering if you could help me out
+      with some things?
+    expression: 1
+    speaker: 0
+  - dialogue: I think I can help you out with, I can come over to your office if
+      you'd like
+    expression: 1
+    speaker: 1
+  responses:
+  - responseTitle: 'Yeah that''d be great, see you in a bit. '
+    dialogueData: {fileID: 0}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
