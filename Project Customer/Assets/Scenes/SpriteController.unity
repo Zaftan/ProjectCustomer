@@ -717,6 +717,11 @@ PrefabInstance:
       propertyPath: minFlipValue
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6827476065796720035, guid: bbeaa7e977b98244f883c202a8e01b7b,
+        type: 3}
+      propertyPath: flipThreshold
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6827476066017707991, guid: bbeaa7e977b98244f883c202a8e01b7b,
         type: 3}
       propertyPath: m_Sprite

@@ -8,7 +8,7 @@ public class SpriteController : MonoBehaviour
 
     //flip state
     private bool flipped;
-    [SerializeField] private float minFlipValue;
+    [SerializeField] private float flipThreshold;
 
     private void Start()
     {
@@ -32,7 +32,7 @@ public class SpriteController : MonoBehaviour
     {
         //check movement to see if sprite should be flipped
         float xMovement = Input.GetAxis("Horizontal");
-        if (flipped && xMovement > minFlipValue || !flipped && xMovement < -minFlipValue)
+        if (flipped && xMovement > flipThreshold || !flipped && xMovement < -flipThreshold)
         {
             Flip();
         }
