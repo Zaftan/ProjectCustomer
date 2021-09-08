@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: Hi Dennis, What would you like to know?
-    expression: 0
-    speaker: 0
+    expression: 1
+    speaker: 1
   responses:
   - responseTitle: Do you know what bar Veronica went to?
     dialogueData: {fileID: 11400000, guid: 6506528cd41f9214f9411f49a05e7d5d, type: 2}

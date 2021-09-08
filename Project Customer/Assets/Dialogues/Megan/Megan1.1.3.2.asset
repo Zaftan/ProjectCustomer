@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: No problem, is there anything else you'd like to know?
-    expression: 0
-    speaker: 0
+    expression: 1
+    speaker: 1
   responses:
   - responseTitle: Who did she go to the bar with?
     dialogueData: {fileID: 11400000, guid: 7818edec0b1edcd4aa51211cd8990be5, type: 2}

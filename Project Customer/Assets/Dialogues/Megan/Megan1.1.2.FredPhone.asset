@@ -21,7 +21,7 @@ MonoBehaviour:
     speaker: 2
   - dialogue: Anything else you'd like to know?
     expression: 1
-    speaker: 2
+    speaker: 1
   responses:
   - responseTitle: Could you tell what you saw at the scene?
     dialogueData: {fileID: 11400000, guid: 70bd8680946bcb641ad6723ffa9eeba3, type: 2}
