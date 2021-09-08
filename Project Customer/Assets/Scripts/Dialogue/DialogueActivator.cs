@@ -5,10 +5,21 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueData data;
 
+    //outline stuff
+    private Outline outline;
+    [Header("Outline object when in range")]
+    [SerializeField] private bool useOutline;
+
     [Header("Event fired on interaction")]
     [SerializeField] private UnityEvent interactEvent;
     [Header("Event fired after interaction")]
     [SerializeField] private UnityEvent endEvent;
+
+    private void Start()
+    {
+        outline = GetComponent<Outline>();
+        outline.enabled = false;
+    }
 
     public void Interact(PlayerMovement player)
     {
@@ -38,6 +49,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
             player.interactable = this;
+            //outline object
+            ToggleOutline();
         }
     }
 
@@ -48,7 +61,17 @@ public class DialogueActivator : MonoBehaviour, IInteractable
             if (player.interactable is DialogueActivator dialogueActivator && dialogueActivator == this)
             {
                 player.interactable = null;
+                //remove object outline
+                ToggleOutline();
             }
+        }
+    }
+
+    private void ToggleOutline()
+    {
+        if (useOutline)
+        {
+            outline.enabled = !outline.enabled;
         }
     }
 }
