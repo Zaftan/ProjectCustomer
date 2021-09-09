@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: PhoneFred1.1.1.2.End
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Aah the wallet from the scene, it belonged to Veronica
+  - dialogue: '*You send the adress over text*'
     expression: 1
     speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
+  - dialogue: Thank you, see you in a bit.
     expression: 1
-    speaker: 0
-  - dialogue: Hey that reminds me, I should call Megan
-    expression: 1
-    speaker: 0
+    speaker: 2
   responses: []

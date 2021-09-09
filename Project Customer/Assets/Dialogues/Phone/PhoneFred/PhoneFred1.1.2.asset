@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: PhoneFred1.1.2
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Aah the wallet from the scene, it belonged to Veronica
+  - dialogue: Well, you'd have to specify what
     expression: 1
-    speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
-    expression: 1
-    speaker: 0
-  - dialogue: Hey that reminds me, I should call Megan
-    expression: 1
-    speaker: 0
-  responses: []
+    speaker: 2
+  responses:
+  - responseTitle: Well, it may be better if you'd come over to my office.
+    dialogueData: {fileID: 11400000, guid: ef9e4a4a400013945b4e96725757924e, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
