@@ -21,3 +21,5 @@ MonoBehaviour:
   responses:
   - responseTitle: Call Fred
     dialogueData: {fileID: 11400000, guid: 186f1d9c4df314741aed7db615677cab, type: 2}
+  - responseTitle: Not yet
+    dialogueData: {fileID: 0}

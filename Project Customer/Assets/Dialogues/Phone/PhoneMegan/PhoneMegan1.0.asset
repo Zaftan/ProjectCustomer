@@ -15,15 +15,12 @@ MonoBehaviour:
   dialogue:
   - dialogue: Hello, you're talking to Megan Who's this?
     expression: 1
+    speaker: 0
+  - dialogue: Hello, you're talking to Megan Who's this?
+    expression: 1
     speaker: 1
   responses:
   - responseTitle: Hey Megan, this is Dennis, how are you doing?
     dialogueData: {fileID: 11400000, guid: e643fff4fa079944e81ec1db15c5ecfe, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
   - responseTitle: Hey megan, I was reviewing Veronica's case...
     dialogueData: {fileID: 11400000, guid: 2204ea7d3435a2249903361d87f64392, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
