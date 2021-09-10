@@ -18,14 +18,18 @@ public class DialogueData : ScriptableObject
     {
         Happy,
         Neutral,
-        Sad
+        Sad,
+        Guilt,
+        Depressed
     }
     [System.Serializable]
     public enum Speaker
     {
         Investigator,
         Mom,
-        GhostBoy
+        Fred,
+        Bob,
+        Orlando
     }
 
     //data struct
