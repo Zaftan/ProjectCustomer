@@ -10,7 +10,7 @@ public class DialogueData : ScriptableObject
 
     public DialogueMessage[] dialogueText => dialogue;
     //response getters
-    public Response[] responseData => responses;
+    public Response[] responsesData => responses;
     public bool HasResponses => responses != null && responses.Length > 0;
 
     [System.Serializable]
