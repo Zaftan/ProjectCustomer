@@ -57,7 +57,7 @@ public class DialogueUI : MonoBehaviour
 
             //wait 1 additional frame to make sure type effect skip doesn't advance text
             yield return null;
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         }
 
         if (data.HasResponses)
@@ -78,7 +78,7 @@ public class DialogueUI : MonoBehaviour
         {
             yield return null;
             //allow to skip type effect
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 writeEffect.Stop();
             }
