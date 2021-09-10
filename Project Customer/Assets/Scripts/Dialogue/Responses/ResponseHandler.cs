@@ -10,6 +10,7 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private RectTransform buttonTemplate;
 
     private DialogueUI dialogueUI;
+    private ResponseEvent[] responseEvents;
 
     private readonly List<GameObject> tempButtons = new List<GameObject>();
 
@@ -21,16 +22,23 @@ public class ResponseHandler : MonoBehaviour
         container = box.Find("ResponseContainer").GetComponent<RectTransform>();
     }
 
+    public void AddResponseEvents(ResponseEvent[] responseEvents)
+    {
+        this.responseEvents = responseEvents;
+    }
+
     public void ShowResponses(Response[] responses)
     {
         float boxHeight = 0;
-        foreach (Response response in responses)
+        for (int i = 0; i < responses.Length; i++)
         {
+            Response response = responses[i];
+            int responseIndex = i;
             //build new button
             GameObject responseButton = Instantiate(buttonTemplate, container).gameObject;
             responseButton.gameObject.SetActive(true);
             responseButton.GetComponent<TMP_Text>().text = response.title;
-            responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response));
+            responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response, responseIndex));
             tempButtons.Add(responseButton);
             //increment height
             boxHeight += buttonTemplate.sizeDelta.y;
@@ -39,7 +47,7 @@ public class ResponseHandler : MonoBehaviour
         box.gameObject.SetActive(true);
     }
 
-    private void OnPickedResponse(Response response)
+    private void OnPickedResponse(Response response, int responseIndex)
     {
         //reset buttons
         box.gameObject.SetActive(false);
@@ -49,11 +57,17 @@ public class ResponseHandler : MonoBehaviour
         }
         tempButtons.Clear();
 
+        //check if event is in bounds
+        if (responseEvents != null && responseIndex <= responseEvents.Length)
+        {
+            responseEvents[responseIndex].onPickedResponse?.Invoke();
+        }
+        responseEvents = null; //prevent carrying of events between dialogues on same object
+
         //only show response if it has dialogue
         if (response.data)
         {
             //activate button events
-            response.onResponse?.Invoke();
             dialogueUI.ShowDialogue(response.data);
         }
         else

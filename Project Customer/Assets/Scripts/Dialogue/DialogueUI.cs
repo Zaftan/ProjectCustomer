@@ -8,6 +8,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text label;
     
     public bool isOpen { get; private set; }
+    public DialogueData currentData { get; private set; }
 
     private ResponseHandler responseHandler;
     private TypewriterEffect writeEffect;
@@ -33,8 +34,14 @@ public class DialogueUI : MonoBehaviour
         activator?.OnInteract();
         //update vars
         isOpen = true;
+        currentData = data;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(data));
+    }
+
+    public void AddResponseEvents(ResponseEvent[] responseEvents)
+    {
+        responseHandler.AddResponseEvents(responseEvents);
     }
 
     private IEnumerator StepThroughDialogue(DialogueData data)
@@ -55,7 +62,7 @@ public class DialogueUI : MonoBehaviour
 
         if (data.HasResponses)
         { //dialogue not done, show responses
-            responseHandler.ShowResponses(data.responseData);
+            responseHandler.ShowResponses(data.responsesData);
         }
         else
         {
@@ -87,6 +94,7 @@ public class DialogueUI : MonoBehaviour
         activator = null;
         //update vars
         isOpen = false;
+        currentData = null;
         dialogueBox.SetActive(false);
         label.text = string.Empty;
     }
