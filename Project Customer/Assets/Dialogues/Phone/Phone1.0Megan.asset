@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Phone1.0
+  m_Name: Phone1.0Megan
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: Who should I call
@@ -19,21 +19,5 @@ MonoBehaviour:
   responses:
   - responseTitle: Megan
     dialogueData: {fileID: 11400000, guid: f179b61c1558f294397c43e1a65ea249, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - responseTitle: Orlando
+  - responseTitle: Maybe later...
     dialogueData: {fileID: 0}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - responseTitle: Bob
-    dialogueData: {fileID: 0}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - responseTitle: Fred
-    dialogueData: {fileID: 0}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
