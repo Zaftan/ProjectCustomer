@@ -15,9 +15,6 @@ MonoBehaviour:
   dialogue:
   - dialogue: Hello, you're talking to Megan Who's this?
     expression: 1
-    speaker: 0
-  - dialogue: Hello, you're talking to Megan Who's this?
-    expression: 1
     speaker: 1
   responses:
   - responseTitle: Hey Megan, this is Dennis, how are you doing?

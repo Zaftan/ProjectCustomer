@@ -16,10 +16,7 @@ MonoBehaviour:
   - dialogue: Oh hello Dennis, the whole situation just messed me up, I still can't
       believe what happened, what can I do for you?
     expression: 0
-    speaker: 0
+    speaker: 1
   responses:
   - responseTitle: I can understand that, I'd like to have a talk about the case
     dialogueData: {fileID: 11400000, guid: 5d39961232e4d334083065baa1838aaf, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []

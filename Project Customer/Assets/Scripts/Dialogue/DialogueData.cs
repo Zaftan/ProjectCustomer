@@ -26,7 +26,7 @@ public class DialogueData : ScriptableObject
     public enum Speaker
     {
         Investigator,
-        Mom,
+        Megan,
         Fred,
         Bob,
         Orlando

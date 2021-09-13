@@ -5,7 +5,7 @@ using TMPro;
 public class DialogueUI : MonoBehaviour
 {
     private GameObject dialogueBox;
-    [SerializeField] private TMP_Text label;
+    [SerializeField] private TMP_Text label, nameLabel;
     
     public bool isOpen { get; private set; }
     public DialogueData currentData { get; private set; }
@@ -48,6 +48,9 @@ public class DialogueUI : MonoBehaviour
     {
         for (int i = 0; i < data.dialogueText.Length; i++)
         {
+            //display name
+            nameLabel.text = data.dialogueText[i].speaker.ToString();
+            //type text on screen
             string dialogue = data.dialogueText[i].dialogue;
             yield return RunTypingEffect(dialogue);
             label.text = dialogue;
