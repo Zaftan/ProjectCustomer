@@ -14,8 +14,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     [SerializeField] private UnityEvent interactEvent;
     [Header("Event fired after interaction")]
     [SerializeField] private UnityEvent endEvent;
-    [Header("Locked event, can be unlocked and attached to end event")]
-    [SerializeField] private UnityEvent lockedEvent;
+    [Header("Locked event can be unlocked and attached to end event")]
+    [SerializeField] private UnityEvent[] lockedEvents;
 
     private void Start()
     {
@@ -43,6 +43,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         player.dialogueUI.ShowDialogue(data);
     }
 
+    #region events
     //events
     public void OnInteract()
     {
@@ -53,10 +54,19 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         endEvent?.Invoke();
     }
-    public void UnLockEvent()
+    public void UnLockEvent(int index)
     {
-        endEvent.AddListener(() => lockedEvent?.Invoke());
+        endEvent.AddListener(() => lockedEvents[index]?.Invoke());
     }
+    public void LockEvent(int index)
+    {
+        endEvent.RemoveListener(() => lockedEvents[index]?.Invoke());
+    }
+    public void ResetEvents()
+    {
+        endEvent = new UnityEvent();
+    }
+    #endregion
 
     //change dialogue object at runtime method
     public void UpdateDialogueData(DialogueData data)

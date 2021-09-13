@@ -5,7 +5,7 @@ using TMPro;
 public class DialogueUI : MonoBehaviour
 {
     private GameObject dialogueBox;
-    [SerializeField] private TMP_Text label;
+    [SerializeField] private TMP_Text label, nameLabel;
     
     public bool isOpen { get; private set; }
     public DialogueData currentData { get; private set; }
@@ -48,6 +48,9 @@ public class DialogueUI : MonoBehaviour
     {
         for (int i = 0; i < data.dialogueText.Length; i++)
         {
+            //display name
+            nameLabel.text = data.dialogueText[i].speaker.ToString();
+            //type text on screen
             string dialogue = data.dialogueText[i].dialogue;
             yield return RunTypingEffect(dialogue);
             label.text = dialogue;
@@ -57,7 +60,7 @@ public class DialogueUI : MonoBehaviour
 
             //wait 1 additional frame to make sure type effect skip doesn't advance text
             yield return null;
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         }
 
         if (data.HasResponses)
@@ -78,7 +81,7 @@ public class DialogueUI : MonoBehaviour
         {
             yield return null;
             //allow to skip type effect
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 writeEffect.Stop();
             }
