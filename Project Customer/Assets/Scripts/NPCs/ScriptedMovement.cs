@@ -45,7 +45,7 @@ public class ScriptedMovement : MonoBehaviour
             //move towards target
             transform.position = Vector3.MoveTowards(transform.position, keyPositions[targetPos].position, moveSpeed * Time.deltaTime);
             //on reach target
-            reached = transform.position == keyPositions[targetPos].position;
+            reached = Vector3.Distance(transform.position, keyPositions[targetPos].position) < 0.1f;
             //wait frame
             yield return null;
         }

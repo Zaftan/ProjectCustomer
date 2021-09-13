@@ -28,10 +28,16 @@ public class PlayerMovement : MonoBehaviour
 
     public IInteractable interactable { get; set; }
 
+    //animation
+    [Header("Animation Reference")]
+    [SerializeField] private Animator animator;
+    private Vector3 lastPos;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
         groundCheck = transform.Find("GroundCheck");
+        lastPos = transform.position;
     }
 
     private void Update()
@@ -47,6 +53,13 @@ public class PlayerMovement : MonoBehaviour
 
             //interaction
             InteractWithObject();
+        }
+        //update animation param
+        if (animator != null)
+        {
+            float combinedSpeed = (Mathf.Abs(lastPos.x - transform.position.x) + Mathf.Abs(lastPos.z - transform.position.z)) * 12;
+            animator.SetFloat("walkSpeed", combinedSpeed);
+            lastPos = transform.position;
         }
     }
 

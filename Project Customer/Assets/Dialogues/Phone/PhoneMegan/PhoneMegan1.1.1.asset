@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: PhoneMegan1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: I am still figuring things out.
+  - dialogue: 'I am still figuring things out.
+
+      Think you can come over?'
     expression: 1
     speaker: 0
   - dialogue: Yes I think I can help you, i'll come to the office in a bit
@@ -22,6 +24,3 @@ MonoBehaviour:
   responses:
   - responseTitle: That'd be great, see you in a bit
     dialogueData: {fileID: 0}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
