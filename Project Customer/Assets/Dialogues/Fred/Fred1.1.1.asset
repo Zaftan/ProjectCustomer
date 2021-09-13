@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fred1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: I played it againt Orlando, the one that ended up crashing the car,
+  - dialogue: I played it against Orlando, the one that ended up crashing the car,
       and someone I don't know the name of, he isn't very importatn
     expression: 2
     speaker: 2

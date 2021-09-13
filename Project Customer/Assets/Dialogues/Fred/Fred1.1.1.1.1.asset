@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Fred1.1.1.2.1
+  m_Name: Fred1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: After the game of beer pong I was pretty drunk, but I can still remember
@@ -18,7 +18,7 @@ MonoBehaviour:
     expression: 1
     speaker: 2
   - dialogue: Veronica on the other hand looked way more wasted then I did, she really
-      did need a ride home and I first thought they would get a taxi.
+      did need a ride home and I first thought she would get a taxi.
     expression: 2
     speaker: 2
   responses:

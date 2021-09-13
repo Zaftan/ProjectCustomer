@@ -17,6 +17,10 @@ MonoBehaviour:
       good guy, I also don''t live that far and Veronica does. '
     expression: 2
     speaker: 2
+  - dialogue: He also didn't look that drunk, which made me underastimate how dangerous
+      it would might get.
+    expression: 2
+    speaker: 2
   responses:
   - responseTitle: Alright, thank you
-    dialogueData: {fileID: 0}
+    dialogueData: {fileID: 11400000, guid: ce7b22c1af1241744adea61e873f99a3, type: 2}

@@ -25,4 +25,4 @@ MonoBehaviour:
     speaker: 2
   responses:
   - responseTitle: Did you talk much to Orlando that night?
-    dialogueData: {fileID: 0}
+    dialogueData: {fileID: 11400000, guid: d7ad82f6fe04c2e4b9634b69dd2baebf, type: 2}

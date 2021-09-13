@@ -17,7 +17,7 @@ MonoBehaviour:
     expression: 1
     speaker: 2
   responses:
-  - responseTitle: Well at the scene I found a beer glass from Bob's bar.
+  - responseTitle: Well at the scene I found a beer glass from Bob's bar...
     dialogueData: {fileID: 11400000, guid: 35149e7305562c24b93d0dd6ffb8c8ee, type: 2}
   - responseTitle: It helps me visualize things better, there are also some things
       I'd like to show.

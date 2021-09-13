@@ -25,4 +25,6 @@ MonoBehaviour:
     speaker: 2
   responses:
   - responseTitle: Did you talk much to Orlando that night?
-    dialogueData: {fileID: 11400000, guid: d7ad82f6fe04c2e4b9634b69dd2baebf, type: 2}
+    dialogueData: {fileID: 11400000, guid: 1d7e36b788e3d984a8847f1b793effff, type: 2}
+  - responseTitle: Why didn't you stop Orlando from drinking so much?
+    dialogueData: {fileID: 11400000, guid: 0296097620572004a8ea613eef741d9e, type: 2}

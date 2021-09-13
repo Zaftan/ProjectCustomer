@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
   m_Name: Fred1.1.1.2 1
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - dialogue: 'I did not talk to Orlando that much, we exchanged a few words that
+      night but that was it, Veronica did talk quite a lot to Orlando, he might have
+      been interested in her. '
+    expression: 1
+    speaker: 2
   responses: []
