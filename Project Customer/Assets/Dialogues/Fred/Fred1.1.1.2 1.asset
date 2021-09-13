@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Fred1.1.1.2 1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'I did not talk to Orlando that much, we exchanged a few words that
-      night but that was it, Veronica did talk quite a lot to Orlando, he might have
-      been interested in her. '
+  - dialogue: I did not talk to Orlando that much, we exchanged a few words that
+      night but that was it, Veronica did talk quite a lot to Orlando
     expression: 1
     speaker: 2
-  responses: []
+  - dialogue: ' he might have been interested in her.'
+    expression: 1
+    speaker: 2
+  responses:
+  - responseTitle: Well you went to Bob's bar, do you go there often?
+    dialogueData: {fileID: 0}

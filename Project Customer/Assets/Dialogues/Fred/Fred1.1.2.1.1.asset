@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Fred1.1.2.1.Reset
+  m_Name: Fred1.1.2.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Is there anything else you want to ask me?
+  - dialogue: 'No problem.
+
+      Is there anything else you want to ask me?'
     expression: 1
     speaker: 2
   responses:
-  - responseTitle: 'Do you know '
-    dialogueData: {fileID: 0}
+  - responseTitle: Well this beer glass is from Bob's bar, do you know Bob well?
+    dialogueData: {fileID: 11400000, guid: de1b6ede2b622594e8f8b8b0d5ab0292, type: 2}

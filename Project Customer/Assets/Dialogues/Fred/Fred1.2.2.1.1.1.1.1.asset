@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Fred1.1.1.2.1.1
+  m_Name: Fred1.2.2.1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: 'Well to be honest, I trusted Orlando because he did seem like a genuine
@@ -22,5 +22,6 @@ MonoBehaviour:
     expression: 2
     speaker: 2
   responses:
-  - responseTitle: Alright, thank you
-    dialogueData: {fileID: 11400000, guid: ce7b22c1af1241744adea61e873f99a3, type: 2}
+  - responseTitle: Alright thank you Fred, i think you've told me everything you
+      know
+    dialogueData: {fileID: 11400000, guid: e5464dec5c4f58e46a650c865957c055, type: 2}
