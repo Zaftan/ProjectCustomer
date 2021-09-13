@@ -10,16 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: Megan0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Aah the wallet from the scene, it belonged to Veronica
+  - dialogue: Let's talk.
     expression: 1
-    speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
-    expression: 1
-    speaker: 0
-  - dialogue: Hey that reminds me, I should call Megan
-    expression: 1
-    speaker: 0
-  responses: []
+    speaker: 1
+  responses:
+  - responseTitle: Sure.
+    dialogueData: {fileID: 11400000, guid: fa15c0aded9475c4fb4d904d893b1876, type: 2}

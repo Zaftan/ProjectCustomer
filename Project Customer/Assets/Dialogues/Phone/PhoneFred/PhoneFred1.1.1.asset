@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: PhoneFred1.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: Well I actually have lots of time now, is it possible for me to come
+      over right now?
+    expression: 0
+    speaker: 2
+  responses:
+  - responseTitle: Yeah for sure, see you in a bit.
+    dialogueData: {fileID: 11400000, guid: 2a9c0d8cf23ff93479070c63002e1261, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: That would be great, here have my adresss
+    dialogueData: {fileID: 11400000, guid: 0a9b30e4caaa80e4b9b1cbcfababefe6, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

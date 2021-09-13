@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: Phone0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: Aah the wallet from the scene, it belonged to Veronica
-    expression: 1
-    speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
-    expression: 1
-    speaker: 0
-  - dialogue: Hey that reminds me, I should call Megan
+  - dialogue: 'I don''t think I need to call anyone right now...
+
+
+      Anyway,
+      there was something I wanted to look at.'
     expression: 1
     speaker: 0
   responses: []

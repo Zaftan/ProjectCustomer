@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 2f;
 
     [Header("Ground Detection Settings")]
+    [SerializeField] private bool canJump = true;
     [SerializeField] private float groundDistance = 0.4f;
     [SerializeField] private LayerMask groundMask;
     private bool isGrounded;
@@ -61,13 +62,13 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MoveVertical()
     {
-        //TODO ask brynn what this does :/
+        //slightly push down to adjust for slopes etc.
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
         //vertical velocity update
-        Jump();
+        if (canJump) Jump();
         velocity.y += gravity * Time.deltaTime;
         //apply new movement
         characterController.Move(velocity * Time.deltaTime);

@@ -4,28 +4,13 @@ using UnityEngine;
 
 public class SpriteController : MonoBehaviour
 {
-    private Transform camPos;
-
     //flip state
     private bool flipped;
     [SerializeField] private float flipThreshold;
 
-    private void Start()
-    {
-        camPos = Camera.main.transform;
-    }
-
     private void Update()
     {
-        UpdateRotation();
         MovementCheck();
-    }
-
-    private void UpdateRotation()
-    {
-        transform.LookAt(camPos);
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-        //add 180 because sprites are meant to be viewed from behind
     }
 
     private void MovementCheck()

@@ -10,7 +10,7 @@ public class DialogueData : ScriptableObject
 
     public DialogueMessage[] dialogueText => dialogue;
     //response getters
-    public Response[] responseData => responses;
+    public Response[] responsesData => responses;
     public bool HasResponses => responses != null && responses.Length > 0;
 
     [System.Serializable]
@@ -18,14 +18,18 @@ public class DialogueData : ScriptableObject
     {
         Happy,
         Neutral,
-        Sad
+        Sad,
+        Guilt,
+        Depressed
     }
     [System.Serializable]
     public enum Speaker
     {
         Investigator,
         Mom,
-        GhostBoy
+        Fred,
+        Bob,
+        Orlando
     }
 
     //data struct
