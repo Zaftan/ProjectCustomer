@@ -28,6 +28,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact(PlayerMovement player)
     {
+        //event when convo is started
+        OnInteract();
         //initailize response events
         foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
         {

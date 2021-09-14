@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         //update animation param
         if (animator != null)
         {
-            float combinedSpeed = (Mathf.Abs(lastPos.x - transform.position.x) + Mathf.Abs(lastPos.z - transform.position.z)) * 12;
+            float combinedSpeed = (Mathf.Abs(lastPos.x - transform.position.x) + Mathf.Abs(lastPos.z - transform.position.z)) * 10;
             animator.SetFloat("walkSpeed", combinedSpeed);
             lastPos = transform.position;
         }

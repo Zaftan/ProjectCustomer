@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: Paper0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: it's the wallet from the scene, it belonged to Veronica
-    expression: 1
-    speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
-    expression: 1
-    speaker: 0
-  - dialogue: That reminds me, I should call Megan about the case
-    expression: 1
+  - dialogue: 'A newspaper covering the scene.
+
+      It shows a detailed image of
+      the car wreck.'
+    expression: 0
     speaker: 0
   responses: []

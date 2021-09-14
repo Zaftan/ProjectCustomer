@@ -30,8 +30,6 @@ public class DialogueUI : MonoBehaviour
     {
         //unlock cursor
         Cursor.lockState = CursorLockMode.None;
-        //activate event
-        activator?.OnInteract();
         //update vars
         isOpen = true;
         currentData = data;
