@@ -16,12 +16,12 @@ MonoBehaviour:
   - dialogue: I was wondering if you know why they brought it with them.
     expression: 1
     speaker: 0
-  - dialogue: Well we did play beer pong with those glasses, I have no idea why they
-      ended up bringing it with them.
+  - dialogue: Well, we did play beer pong with those glasses. I have no idea why
+      they ended up bringing one of the glasses with them.
     expression: 1
     speaker: 2
   responses:
-  - responseTitle: Alright, Who did you play beer pong with?
+  - responseTitle: Alright, about beer pong...
     dialogueData: {fileID: 11400000, guid: 611b8c13052940940aa775acd95bb2fd, type: 2}
   - responseTitle: Do you know who took it?
     dialogueData: {fileID: 11400000, guid: b225f73017721474eabf2ab18fd14a0c, type: 2}

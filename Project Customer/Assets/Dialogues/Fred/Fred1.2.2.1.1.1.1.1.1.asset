@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Fred1.1.2.1
+  m_Name: Fred1.2.2.1.1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: I did not talk to Orlando that much, we exchanged a few words that
-      night but that was it, Veronica did talk quite a lot to Orlando
+  - dialogue: 'No problem, here by the way, have Bob''s number he might know some
+      more things '
     expression: 1
     speaker: 2
-  - dialogue: 'he might have been interested in her. '
+  - dialogue: '*you now have Bob''s number*'
     expression: 1
     speaker: 2
   responses:
-  - responseTitle: Alright thanks
-    dialogueData: {fileID: 11400000, guid: acc3b903436933941aac0d8c7a0275e7, type: 2}
+  - responseTitle: Thank you for your time Fred, you helped me alot
+    dialogueData: {fileID: 11400000, guid: 8c2561909d5bb0e4a9473e84108e6e12, type: 2}

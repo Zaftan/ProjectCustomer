@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Fred1.1.1.1
+  m_Name: Fred1.2.2.1.1 1
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: Well I didn't know he was by car at first and he didn't seem to be
@@ -22,6 +22,6 @@ MonoBehaviour:
     speaker: 2
   responses:
   - responseTitle: Did you drink too much yourself to?
-    dialogueData: {fileID: 11400000, guid: d2eccc4ef8f903042b7e18d38644d9d7, type: 2}
+    dialogueData: {fileID: 11400000, guid: 343095a345830d44c83fda8de1700364, type: 2}
   - responseTitle: Back to the glass, Do you know who took it?
     dialogueData: {fileID: 11400000, guid: f647a5839f9639a4ab70075a214e6f08, type: 2}
