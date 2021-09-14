@@ -550,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 530751843786648868}
+  nameLabel: {fileID: 6142632086349671476}
 --- !u!114 &8490230006770755909
 MonoBehaviour:
   m_ObjectHideFlags: 0

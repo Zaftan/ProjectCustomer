@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
-    public float transitionTime = 1f;
 
-    public void Fade()
+    public void Fade(float transitionTime = 1f)
     {
-        StartCoroutine(CrossFade());
+        StartCoroutine(CrossFade(transitionTime));
     }
 
-    IEnumerator CrossFade()
+    IEnumerator CrossFade(float transitionTime)
     {
+        //start fade
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
+        //end fade
         transition.SetTrigger("Start");
     }
 }
