@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Orlando1.1.1.1.2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: I did hit my head against the steering wheel, but other then that I
+      was alright, I got extremely lucky
+    expression: 1
+    speaker: 4
+  - dialogue: Yes you were very lucky
+    expression: 1
+    speaker: 0
+  - dialogue: I just wish it was Veronica who was lucky and not me
+    expression: 2
+    speaker: 4
+  responses:
+  - responseTitle: Do you think Veronica died on impact?
+    dialogueData: {fileID: 11400000, guid: e3d4a64d0b304d446b4dbead97a761ec, type: 2}
