@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -42,6 +43,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
         //set activator reference
         player.dialogueUI.activator = this;
+        //start dialogue
         player.dialogueUI.ShowDialogue(data);
     }
 
