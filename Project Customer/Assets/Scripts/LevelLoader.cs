@@ -1,21 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Animator transition;
+    [SerializeField] private Animator transition;
+    [SerializeField] private float transitionTime;
+    [SerializeField] private TMP_Text label;
 
-    public void Fade(float transitionTime = 1f)
+    public void Fade(string text)
     {
-        StartCoroutine(CrossFade(transitionTime));
+        StartCoroutine(CrossFade(text));
     }
 
-    IEnumerator CrossFade(float transitionTime)
+    IEnumerator CrossFade(string text)
     {
         //start fade
         transition.SetTrigger("Start");
+        label.text = text;
         yield return new WaitForSeconds(transitionTime);
         //end fade
         transition.SetTrigger("Start");

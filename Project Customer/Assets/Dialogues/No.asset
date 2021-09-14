@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: No
   m_EditorClassIdentifier: 
   dialogue:
-  - '"No."
+  - dialogue: 'here is text
 
+      .
 
-    such a powerfull phrase'
+      yes'
+    expression: 0
+    speaker: 0
+  - dialogue: more text
+    expression: 0
+    speaker: 0
+  responses:
+  - responseTitle: yes
+    dialogueData: {fileID: 11400000, guid: 2ff230ff1b2850746a74ef85e6289318, type: 2}
