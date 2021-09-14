@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Fred1.2.2.1.1.1.1.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'No problem, here by the way, have Bob''s number he might know some
+      more things '
+    expression: 1
+    speaker: 2
+  - dialogue: '*you now have Bob''s number*'
+    expression: 1
+    speaker: 2
+  responses:
+  - responseTitle: Thank you for your time Fred, you helped me alot
+    dialogueData: {fileID: 11400000, guid: 8c2561909d5bb0e4a9473e84108e6e12, type: 2}

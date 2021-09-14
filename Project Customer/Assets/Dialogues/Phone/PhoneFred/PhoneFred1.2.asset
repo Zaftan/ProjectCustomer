@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: PhoneFred1.2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: I'm an investigator and I'd like to ask you some questions.
+    expression: 1
+    speaker: 0
+  - dialogue: About what?
+    expression: 1
+    speaker: 2
+  responses:
+  - responseTitle: Well I am re-invastigating Veronica s case
+    dialogueData: {fileID: 11400000, guid: 90511bda5eb93cf4c9e8adc131659f47, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []

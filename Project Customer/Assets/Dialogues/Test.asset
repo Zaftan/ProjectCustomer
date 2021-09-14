@@ -14,17 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - myes
-  - couldn't agree more
-  - 'more test
+  - 'couldn''t agree more.....
+
+    this is a normal sentence.
+
+    It is here for,
+    eh, testing? I guess.'
+  - 'more test.
 
     yes
 
     testing is great :('
   - 'hello, this is more text
 
-    look at it all!'
+    look at it all!! isn''t it great?'
   responses:
   - responseTitle: Yes
     dialogueData: {fileID: 11400000, guid: 2ff230ff1b2850746a74ef85e6289318, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - responseTitle: No
     dialogueData: {fileID: 11400000, guid: 5b75e3dfe9ae02c44a8bf504fb89fade, type: 2}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - responseTitle: wha?
+    dialogueData: {fileID: 0}
+    responseEvent:
+      m_PersistentCalls:
+        m_Calls: []
