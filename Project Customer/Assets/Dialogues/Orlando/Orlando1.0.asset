@@ -17,13 +17,13 @@ MonoBehaviour:
     expression: 1
     speaker: 0
   - dialogue: I feel extremely guilty at the moment, I can't believe that I was so
-      stupid
+      stupid..
     expression: 3
     speaker: 4
-  - dialogue: alright Orlando, I am going to have to ask you some hard questions
+  - dialogue: I am going to have to ask you some hard questions
     expression: 1
     speaker: 0
-  - dialogue: I understand
+  - dialogue: I understand...
     expression: 2
     speaker: 4
   responses:

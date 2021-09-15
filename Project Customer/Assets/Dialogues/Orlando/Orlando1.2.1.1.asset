@@ -17,9 +17,6 @@ MonoBehaviour:
       dumb of me to even start playing
     expression: 1
     speaker: 4
-  - dialogue: Yes it was indeed dumb
-    expression: 1
-    speaker: 4
   responses:
-  - responseTitle: I'd like to know a bit more
-    dialogueData: {fileID: 11400000, guid: 10c6a8fb6ddb4a14a8986e473542f8ba, type: 2}
+  - responseTitle: What's on your mind?
+    dialogueData: {fileID: 11400000, guid: 7f987939afb5e8c429f6325869ddfd86, type: 2}

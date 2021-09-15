@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Orlando2.2.1.2
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: That stepping into the car right now is impossible for me, it just
-      makes me insantly feel guilty again, which I am of course.
+  - dialogue: 'That stepping into the car right now is impossible for me, it just
+      makes me insantly feel guilty again, '
     expression: 2
     speaker: 4
   - dialogue: I can understand

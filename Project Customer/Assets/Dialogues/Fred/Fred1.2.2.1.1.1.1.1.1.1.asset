@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fred1.2.2.1.1.1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: You're welcom and goodbye
+  - dialogue: You're welcome and goodbye
     expression: 0
     speaker: 0
   responses: []

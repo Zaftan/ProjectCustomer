@@ -18,7 +18,7 @@ MonoBehaviour:
     expression: 1
     speaker: 2
   - dialogue: Veronica on the other hand looked way more wasted then I did, she really
-      did need a ride home and I first thought she would get a taxi.
+      did need a ride home and I  thought she would just get a taxi...
     expression: 2
     speaker: 2
   responses:

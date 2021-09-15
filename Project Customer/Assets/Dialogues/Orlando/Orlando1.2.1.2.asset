@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Orlando1.2.1.2
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: That stepping into the car right now is impossible for me, it just
-      makes me insantly feel guilty again, which I am of course.
+  - dialogue: 'That stepping into the car right now is impossible for me, it just
+      makes me insantly feel guilty again, '
     expression: 2
     speaker: 4
   - dialogue: I can understand
     expression: 1
     speaker: 0
   responses:
-  - responseTitle: But why did you end up drinking so much?
-    dialogueData: {fileID: 11400000, guid: 8554f6258cb93934cac076220ad20109, type: 2}
+  - responseTitle: I think you told me the things that are important
+    dialogueData: {fileID: 11400000, guid: 3e0ae2e4120fafd498ad544b6a498890, type: 2}
