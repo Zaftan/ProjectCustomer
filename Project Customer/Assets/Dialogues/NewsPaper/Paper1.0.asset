@@ -19,14 +19,14 @@ MonoBehaviour:
       the car wreck.
 
       Let''s see what else is here.'
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'It shows an advertisement for Bob''s bar.
 
       A phone number is
-      written in the corner of the image.
-
-      *got bob''s bar phone number*'
+      written in the corner of the image. *got bob''s bar phone number*'
+    unskippable: 0
     expression: 1
     speaker: 0
   responses:

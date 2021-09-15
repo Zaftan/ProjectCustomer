@@ -15,21 +15,13 @@ MonoBehaviour:
   dialogue:
   - dialogue: She went to Bob's bar, there she went drinking, after that she did
       not come home.
+    unskippable: 0
     expression: 1
     speaker: 1
   responses:
   - responseTitle: What happened after that?
     dialogueData: {fileID: 11400000, guid: b5986d9c77369e6468ad36c9f00f20c7, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
   - responseTitle: How did you find out that it happened?
-    dialogueData: {fileID: 11400000, guid: e7aa222971ab777468a294f503bd8d84, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
+    dialogueData: {fileID: 11400000, guid: 28e4b9710a9935944a837b14bf3597a3, type: 2}
   - responseTitle: Do you know if Bob knows anything?
     dialogueData: {fileID: 11400000, guid: caed309c4fe31a94ab2ddb1ef8321c84, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []

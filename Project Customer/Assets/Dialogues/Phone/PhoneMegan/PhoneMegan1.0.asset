@@ -18,9 +18,11 @@ MonoBehaviour:
       . . .
 
       . . .'
+    unskippable: 1
     expression: 1
     speaker: 1
   - dialogue: Hello, you're talking to Megan Who's this?
+    unskippable: 0
     expression: 1
     speaker: 1
   responses:

@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Fred1.1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'Well to be honest, I trusted Orlando because he did seem like a genuine
+  - dialogue: 'Well to be honest, I trusted Orlando because he seemed like a genuine
       good guy, I also don''t live that far and Veronica does. '
+    unskippable: 0
     expression: 2
     speaker: 2
   - dialogue: He didn't look that drunk, which made me underestimate how dangerous
       it was.
+    unskippable: 0
     expression: 2
     speaker: 2
   responses:

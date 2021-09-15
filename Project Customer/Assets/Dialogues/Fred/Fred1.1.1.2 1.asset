@@ -15,11 +15,13 @@ MonoBehaviour:
   dialogue:
   - dialogue: I did not talk to Orlando that much, we exchanged a few words that
       night but that was it, Veronica did talk quite a lot to Orlando
+    unskippable: 0
     expression: 1
     speaker: 2
   - dialogue: ' he might have been interested in her.'
+    unskippable: 0
     expression: 1
     speaker: 2
   responses:
   - responseTitle: Do you think Bob might know Orlando well?
-    dialogueData: {fileID: 0}
+    dialogueData: {fileID: 11400000, guid: d695f29021c920e4cbebbb02af216ed4, type: 2}

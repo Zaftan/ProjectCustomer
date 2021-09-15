@@ -13,31 +13,38 @@ MonoBehaviour:
   m_Name: Bob4
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: For Orlando, did he drink a lot?
-    expression: 1
-    speaker: 0
-  - dialogue: 'His tab is quite full, even for the rounds he gave to everyone.
-
-      So
-      i would say so yes.'
-    expression: 1
+  - dialogue: I saw him in the city once, he frankly didnt look too good.
+    unskippable: 0
+    expression: 2
     speaker: 3
-  - dialogue: It truly saddens me that i didn't know he was driving.
+  - dialogue: But if you imagine the relation he had to Veronica, its frankly understandable
+      he is not doing good
+    unskippable: 0
     expression: 4
     speaker: 3
-  - dialogue: I wish i kept an eye on how everyone arrived...
+  - dialogue: 'That isnt good to hear.
+
+      Ill make sure to check up on him later.'
+    unskippable: 0
     expression: 3
-    speaker: 3
-  - dialogue: It's fine Bob, you dont have to feel quilty.
+    speaker: 0
+  - dialogue: Do you know how much he drank that night, by any chance?
+    unskippable: 0
     expression: 1
     speaker: 0
-  - dialogue: It's not your main job after all, so i allready find it quite commendable
-      you know it most of the times!
-    expression: 0
+  - dialogue: Yeah, Fred drank a lot as well, but he isnt as much as a lightweight.
+      I remember seeing him leave by bike.
+    unskippable: 0
+    expression: 1
+    speaker: 3
+  - dialogue: how do you know that?
+    unskippable: 0
+    expression: 1
     speaker: 0
-  - dialogue: Thanks Dennis that means a lot to me.
-    expression: 0
-    speaker: 0
+  - dialogue: He was cycling quite well for how much he drank
+    unskippable: 0
+    expression: 1
+    speaker: 3
   responses:
-  - responseTitle: Thank you, thats all for now.
+  - responseTitle: Thank you, that's all for now.
     dialogueData: {fileID: 0}

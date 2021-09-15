@@ -16,26 +16,26 @@ MonoBehaviour:
   - dialogue: 'Hey Bob,
 
       Thanks for making time for me.'
+    unskippable: 0
     expression: 0
     speaker: 0
   - dialogue: I know its hard to fine time with your own buissness
+    unskippable: 0
     expression: 1
     speaker: 0
-  - dialogue: 'No Worries, I called Jim and explained the situation.
-
-      He was
-      more than willing to start his shift earlier'
+  - dialogue: No Worries, I called Jim and explained the situation. He was more than
+      willing to start his shift earlier
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: What would you like to know about that unfaithfull night?
+    unskippable: 0
     expression: 1
     speaker: 3
   responses:
   - responseTitle: How much did Veronica drink?
     dialogueData: {fileID: 11400000, guid: 0b6d165e1734d60489560ca6ab9cba80, type: 2}
   - responseTitle: Shall we talk about Orlando?
-    dialogueData: {fileID: 11400000, guid: 81575b5a1da04684e836207771fe0f8c, type: 2}
+    dialogueData: {fileID: 11400000, guid: fe99c7a0087ab60488e5a93062097f93, type: 2}
   - responseTitle: Do you know how Fred's doing
-    dialogueData: {fileID: 11400000, guid: acfa1d7d9a21fa042a9511557f08e14e, type: 2}
-  - responseTitle: Thank you Bob, I have all the information i need
-    dialogueData: {fileID: 11400000, guid: acfa1d7d9a21fa042a9511557f08e14e, type: 2}
+    dialogueData: {fileID: 11400000, guid: c9452fdfd5aa0e54fac0c0dc13ed1aff, type: 2}

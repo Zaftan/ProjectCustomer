@@ -25,10 +25,8 @@ MonoBehaviour:
     unskippable: 0
     expression: 1
     speaker: 4
-  - dialogue: 'Hello, this is Dennis.
-
-      I''m a private investigator who is looking
-      into the case about Veronica.'
+  - dialogue: Hello, this is Dennis. I'm a private investigator who is looking into
+      the case about Veronica.
     unskippable: 0
     expression: 1
     speaker: 0
@@ -50,8 +48,6 @@ MonoBehaviour:
     unskippable: 0
     expression: 1
     speaker: 4
-  - dialogue: Alright, I'll see you then.
-    unskippable: 0
-    expression: 1
-    speaker: 0
-  responses: []
+  responses:
+  - responseTitle: Alright, see you then.
+    dialogueData: {fileID: 0}

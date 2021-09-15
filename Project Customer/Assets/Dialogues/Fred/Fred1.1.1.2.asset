@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Fred1.1.1.2
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'Well I know Veronica wouldn''t take the beer glass since she does
-      not like beer that much,
-
-      she''d only drink it while we play drinking
-      games'
+  - dialogue: Well I know Veronica wouldn't take the beer glass since she does not
+      like beer that much, she'd only drink it while we play drinking games
+    unskippable: 0
     expression: 1
     speaker: 2
   - dialogue: so it must have been Orlando
+    unskippable: 0
     expression: 1
     speaker: 2
   responses:
