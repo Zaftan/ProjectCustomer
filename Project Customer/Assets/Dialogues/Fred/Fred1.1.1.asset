@@ -14,14 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: ' Who did you play with?'
+    unskippable: 0
     expression: 1
     speaker: 0
-  - dialogue: I played against Orlando, the one that ended up crashing the car, and
-      someone I don't know the name of, but I don't think they were involved.
+  - dialogue: I played against Orlando, the one that ended up crashing the car.
+    unskippable: 0
+    expression: 2
+    speaker: 2
+  - dialogue: I also played against someone I don't know the name of, but I don't
+      think they were involved.
+    unskippable: 0
     expression: 2
     speaker: 2
   - dialogue: I played together against them with Veronica, that's how Orlando and
       Veronica ended up talking that evening.
+    unskippable: 0
     expression: 2
     speaker: 2
   responses:

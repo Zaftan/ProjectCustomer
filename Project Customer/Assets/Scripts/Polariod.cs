@@ -31,7 +31,7 @@ public class Polariod : MonoBehaviour
         {
             if (start)
             {
-                rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, stopPosition, moveSpeed);
+                rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, stopPosition, moveSpeed * Time.deltaTime);
                 if (rect.anchoredPosition.y - stopPosition.y < 0.1f)
                 {
                     start = false;
@@ -40,7 +40,7 @@ public class Polariod : MonoBehaviour
             }
             else
             {
-                rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, new Vector2(0, -100 - rect.sizeDelta.y), moveSpeed);
+                rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, new Vector2(0, -100 - rect.sizeDelta.y), moveSpeed * Time.deltaTime);
             }
             yield return null;
         }

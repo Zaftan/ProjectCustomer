@@ -23,7 +23,9 @@ public class DialogueUI : MonoBehaviour
         //get obj references
         dialogueBox = transform.Find("DialogueBox").gameObject;
         //start with dialogue closed
-        EndDialogue();
+        EndDialogue(false);
+        //set mouse
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ShowDialogue(DialogueData data)
@@ -86,10 +88,13 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public void EndDialogue(bool start = false)
     {
-        //lock cursor
-        Cursor.lockState = CursorLockMode.Locked;
+        if (!start)
+        {
+            //lock cursor
+            Cursor.lockState = CursorLockMode.Locked;
+        }
         //activate event
         activator?.OnEndInteract();
         activator = null;
