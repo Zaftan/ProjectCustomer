@@ -50,7 +50,7 @@ public class DialogueUI : MonoBehaviour
             nameLabel.text = data.dialogueText[i].speaker.ToString();
             //type text on screen
             string dialogue = data.dialogueText[i].dialogue;
-            yield return RunTypingEffect(dialogue);
+            yield return RunTypingEffect(dialogue, data.dialogueText[i].unskippable);
             label.text = dialogue;
 
             //skip last click if there are responses
@@ -71,7 +71,7 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    private IEnumerator RunTypingEffect(string dialogue)
+    private IEnumerator RunTypingEffect(string dialogue, bool unskippable)
     {
         writeEffect.Run(dialogue, label);
 
@@ -79,7 +79,7 @@ public class DialogueUI : MonoBehaviour
         {
             yield return null;
             //allow to skip type effect
-            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+            if (!unskippable && Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 writeEffect.Stop();
             }

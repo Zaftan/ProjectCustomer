@@ -848,7 +848,7 @@ MonoBehaviour:
         m_MethodName: UpdateDialogueData
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f3d694c7efc59984790440da5f51c049,
+          m_ObjectArgument: {fileID: 11400000, guid: 80c0068f90163c342bc807add8a4782f,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueData, Assembly-CSharp
           m_IntArgument: 0
@@ -1079,6 +1079,7 @@ GameObject:
   - component: {fileID: 258506941}
   - component: {fileID: 258506940}
   - component: {fileID: 258506939}
+  - component: {fileID: 258506943}
   - component: {fileID: 258506938}
   m_Layer: 0
   m_Name: Wallet
@@ -1266,6 +1267,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258506936}
   m_Mesh: {fileID: 3631211900962485393, guid: 05f81fa56b9ec484786a5984b2ef0608, type: 3}
+--- !u!114 &258506943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258506936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbc16fa2285b4245b3fc1b1b6ea6533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 42fcc555c877d48499996b3a26365f7c, type: 2}
+  responseEvents:
+  - name: Look at the picture
+    onResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2000521333}
+          m_TargetAssemblyTypeName: Polariod, Assembly-CSharp
+          m_MethodName: ShowPolariod
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: b6aeb569f2e107840a09dff3167ae9ed,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Leave it alone
+    onResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &287899500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4041388641232577030, guid: 96891a37f4dbf904c953c1e56ec35c4f,
@@ -1804,6 +1840,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 181402384}
     m_Modifications:
+    - target: {fileID: 5516410250763312134, guid: a2d4e01f7f3f69947903533984c78913,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 5632794764669099404, guid: a2d4e01f7f3f69947903533984c78913,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3304,6 +3345,47 @@ MonoBehaviour:
           m_StringArgument: Later that day
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1532305470}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 602930c10b078e5419c9f44ba91342f1,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueData, Assembly-CSharp
+          m_IntArgument: 2
+          m_FloatArgument: 2.5
+          m_StringArgument: Some Time Later
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 242715003}
+        m_TargetAssemblyTypeName: ScriptedMovement, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 2.5
+          m_StringArgument: Some Time Later
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 121110953}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: Fade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: An hour later
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1532305471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4130,6 +4212,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1142781904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2000521333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5516410250763312134, guid: a2d4e01f7f3f69947903533984c78913,
+    type: 3}
+  m_PrefabInstance: {fileID: 657395667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f39166ecc0a0f34da08161c23388497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2024506317
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,8 +4435,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.015692635, y: 1.1824442, z: 0.02164095}
-  m_Center: {x: 0.02027043, y: -0.36485055, z: -0.008063006}
+  m_Size: {x: 0.017968234, y: 1.1824445, z: 0.01622969}
+  m_Center: {x: 0.0030357828, y: -0.3648508, z: 0.015512089}
 --- !u!114 &2042650328372475407
 MonoBehaviour:
   m_ObjectHideFlags: 0

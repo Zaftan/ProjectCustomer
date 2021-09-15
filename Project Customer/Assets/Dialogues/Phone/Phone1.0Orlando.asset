@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: Phone1.0Orlando
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'It''s the wallet from the scene, it belonged to Veronica
-
-      It
-      seems to have a picture in it.'
+  - dialogue: Should I call Orlando?
+    unskippable: 0
     expression: 1
     speaker: 0
   responses:
-  - responseTitle: Look at the picture
-    dialogueData: {fileID: 11400000, guid: e329be396024f1f4bb1c0e906e007b55, type: 2}
-  - responseTitle: Leave it alone
+  - responseTitle: Call Orlando
+    dialogueData: {fileID: 11400000, guid: c240220c62ae0ca4e8f5f74061a55100, type: 2}
+  - responseTitle: Maybe later
     dialogueData: {fileID: 0}
