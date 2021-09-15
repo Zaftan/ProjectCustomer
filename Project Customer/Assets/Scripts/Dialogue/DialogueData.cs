@@ -29,7 +29,8 @@ public class DialogueData : ScriptableObject
         Megan,
         Fred,
         Bob,
-        Orlando
+        Orlando,
+        Police
     }
 
     //data struct
@@ -37,6 +38,7 @@ public class DialogueData : ScriptableObject
     public struct DialogueMessage
     {
         [SerializeField] [TextArea] public string dialogue;
+        [SerializeField] public bool unskippable;
         [SerializeField] public Expression expression;
         [SerializeField] public Speaker speaker;
     }

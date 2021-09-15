@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Wallet2.0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'It''s the Wallet from the scene.
-
-      I don''t need it right now.'
+  - dialogue: That reminds me, I should call Megan about the case
     expression: 0
     speaker: 0
   responses: []
