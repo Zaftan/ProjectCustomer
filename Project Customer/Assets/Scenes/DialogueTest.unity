@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &29554724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6142632086349671476, guid: a2d4e01f7f3f69947903533984c78913,
+    type: 3}
+  m_PrefabInstance: {fileID: 5774661918667431692}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132660298
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +343,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5268ea58759b5bd4292d997e6caa8e55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -375,6 +387,7 @@ GameObject:
   - component: {fileID: 1921408592}
   - component: {fileID: 1921408591}
   - component: {fileID: 1921408595}
+  - component: {fileID: 1921408597}
   - component: {fileID: 1921408596}
   m_Layer: 0
   m_Name: Box
@@ -442,7 +455,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 69bc923523f52194aa7c95a2220d5f43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -484,14 +497,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2917583c085b9a1489ac798040014728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: e601f33fd6c90f244a9b48d323d2cebd, type: 2}
-  useOutline: 0
+  data: {fileID: 11400000, guid: 8fdc08f0261472b4ba0069ad2e7f2a3a, type: 2}
+  useOutline: 1
   interactEvent:
     m_PersistentCalls:
       m_Calls: []
   endEvent:
     m_PersistentCalls:
       m_Calls: []
+  lockedEvents: []
 --- !u!114 &1921408596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +550,20 @@ MonoBehaviour:
     - {x: 0.57735026, y: 0.57735026, z: -0.57735026}
     - {x: 0.57735026, y: 0.57735026, z: 0.57735026}
     - {x: 0.57735026, y: -0.57735026, z: 0.57735026}
+--- !u!114 &1921408597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921408589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbc16fa2285b4245b3fc1b1b6ea6533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 0}
+  responseEvents: []
 --- !u!4 &2024169787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2418458534453304671, guid: 90316836f7136524b9ed3e55b9c68040,
@@ -619,6 +647,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2418458535560135583, guid: 90316836f7136524b9ed3e55b9c68040,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 69bc923523f52194aa7c95a2220d5f43, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90316836f7136524b9ed3e55b9c68040, type: 3}
 --- !u!1001 &5774661918667431692
@@ -733,6 +766,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5774661918363349929, guid: a2d4e01f7f3f69947903533984c78913,
+        type: 3}
+      propertyPath: nameLabel
+      value: 
+      objectReference: {fileID: 29554724}
     - target: {fileID: 8069425772854438715, guid: a2d4e01f7f3f69947903533984c78913,
         type: 3}
       propertyPath: m_Name

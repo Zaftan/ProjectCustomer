@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Orlando2.2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'I was a little bit, we were listening to radio and a song I knew came
+      on, but it didn''t cause me to crash. '
+    expression: 1
+    speaker: 4
+  - dialogue: 'I also realized that everything just seemed a bit slower or it felt
+      like it came in later. '
+    expression: 1
+    speaker: 4
+  responses:
+  - responseTitle: You received a DWI already right?
+    dialogueData: {fileID: 11400000, guid: 1acbacf32b7708144a9c54af1b81f74a, type: 2}
+  - responseTitle: Why didn't stop after that?
+    dialogueData: {fileID: 11400000, guid: ef08183f39401d549899ccf2b6a779aa, type: 2}
