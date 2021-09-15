@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Orlando1.1.1.1.1.1
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: she wasn't moving at all and I the amount of blood she lost was too
-      much. I immediatly confessed what I had done.
+  - dialogue: ' I immediatly confessed what I had done.'
     expression: 3
     speaker: 4
   - dialogue: 'Atleast you were honest about it, '

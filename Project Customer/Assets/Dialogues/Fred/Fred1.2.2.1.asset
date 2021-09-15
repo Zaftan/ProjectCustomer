@@ -17,12 +17,13 @@ MonoBehaviour:
       by talking to him.
     expression: 1
     speaker: 2
-  - dialogue: Here have his number
+  - dialogue: Do you have his number by chance?
+    expression: 1
+    speaker: 0
+  - dialogue: I sadly don't..
     expression: 1
     speaker: 2
-  - dialogue: '*you now have Bob''s number*'
+  - dialogue: Thank you for everything Fred, I think that's all I need to know.
     expression: 1
-    speaker: 2
-  responses:
-  - responseTitle: Okay, back to the game of beer pong...
-    dialogueData: {fileID: 11400000, guid: 141f534b511e7b2478aadc7d84eea391, type: 2}
+    speaker: 0
+  responses: []

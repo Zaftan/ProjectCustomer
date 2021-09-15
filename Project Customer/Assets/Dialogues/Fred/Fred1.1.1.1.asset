@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: Well I didn't know he was by car at first and he didn't seem to be
-      that effected by the alcohol that much, I must have underestimated it.
+      that effected by the alcohol , I must have underestimated it.
     expression: 1
     speaker: 2
   - dialogue: I should have stopped him.

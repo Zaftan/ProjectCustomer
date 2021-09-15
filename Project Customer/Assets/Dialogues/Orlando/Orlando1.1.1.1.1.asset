@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: I was pretty sure she died on impact, I immediatly called 911, but
-      I kind of knew it was already to late.
+      deep down I knew it was already too late.
     expression: 4
     speaker: 4
   responses:

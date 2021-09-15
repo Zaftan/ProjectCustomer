@@ -19,5 +19,5 @@ MonoBehaviour:
     expression: 1
     speaker: 2
   responses:
-  - responseTitle: Well this beer glass is from Bob's bar, do you know Bob well?
+  - responseTitle: The glass we found is from Bob's bar, do you know Bob well?
     dialogueData: {fileID: 11400000, guid: de1b6ede2b622594e8f8b8b0d5ab0292, type: 2}
