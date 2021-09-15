@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: PhoneBob0
   m_EditorClassIdentifier: 
   dialogue:
+  - dialogue: '. . .
+
+      . . .
+
+      . . .'
+    expression: 0
+    speaker: 3
   - dialogue: 'Hey Bob from Bob''s bar speaking!
 
       How may I help you?'

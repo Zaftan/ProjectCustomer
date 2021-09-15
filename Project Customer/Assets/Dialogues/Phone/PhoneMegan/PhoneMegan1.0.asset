@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: PhoneMegan1.0
   m_EditorClassIdentifier: 
   dialogue:
+  - dialogue: '. . .
+
+      . . .
+
+      . . .'
+    expression: 1
+    speaker: 1
   - dialogue: Hello, you're talking to Megan Who's this?
     expression: 1
     speaker: 1

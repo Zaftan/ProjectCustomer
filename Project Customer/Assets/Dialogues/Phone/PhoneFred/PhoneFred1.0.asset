@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: PhoneFred1.0
   m_EditorClassIdentifier: 
   dialogue:
+  - dialogue: '. . .
+
+      . . .
+
+      . . .'
+    expression: 1
+    speaker: 2
   - dialogue: Hello, you're speaking to Fred, who's this?
     expression: 1
     speaker: 2
   responses:
   - responseTitle: Hi this is Dennis, I am re-investigating Veronica s case
     dialogueData: {fileID: 11400000, guid: b797196412a38b04a9758c4d99d54310, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
   - responseTitle: Hi you're talking to Dennis.
     dialogueData: {fileID: 11400000, guid: bae7f8219885fa14d8de80a2393092cb, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
