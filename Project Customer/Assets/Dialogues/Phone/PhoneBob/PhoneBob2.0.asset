@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: PhoneBob2.0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: Oh hey Dennis, yeah i can come over, this whole situation still saddens
+      me
+    unskippable: 0
+    expression: 2
+    speaker: 3
+  - dialogue: 'I can understand that.
+
+      Dealing with something like this never
+      is easy'
+    unskippable: 0
+    expression: 2
+    speaker: 0
+  - dialogue: 'I''m sorry to make you revisit this.
+
+'
+    unskippable: 0
+    expression: 2
+    speaker: 0
+  - dialogue: 'Its fine.
+
+      This might help me give some closure
+
+'
+    unskippable: 0
+    expression: 2
+    speaker: 3
+  responses: []

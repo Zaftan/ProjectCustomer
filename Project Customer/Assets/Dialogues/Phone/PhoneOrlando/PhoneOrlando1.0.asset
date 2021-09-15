@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: PhoneOrlando1.0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: '. . .
+
+      . . .
+
+      . . .'
+    unskippable: 1
+    expression: 1
+    speaker: 0
+  - dialogue: Hello?
+    unskippable: 0
+    expression: 1
+    speaker: 4
+  - dialogue: Hello, this is Dennis. I'm a private investigator who is looking into
+      the case about Veronica.
+    unskippable: 0
+    expression: 1
+    speaker: 0
+  - dialogue: 'Oh, I see.
+
+      I assume you want me to tell what happened?'
+    unskippable: 0
+    expression: 1
+    speaker: 4
+  - dialogue: 'Yes, that would be great!
+
+      Do you have time to come over?'
+    unskippable: 0
+    expression: 1
+    speaker: 0
+  - dialogue: 'Eh, yeah, sure.
+
+      I can be there in about an hour.'
+    unskippable: 0
+    expression: 1
+    speaker: 4
+  responses:
+  - responseTitle: Alright, see you then.
+    dialogueData: {fileID: 0}

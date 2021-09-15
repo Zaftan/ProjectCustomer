@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Fred1.1.1.1.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'Well to be honest, I trusted Orlando because he seemed like a genuine
+      good guy, I also don''t live that far and Veronica does. '
+    unskippable: 0
+    expression: 2
+    speaker: 2
+  - dialogue: He didn't look that drunk, which made me underestimate how dangerous
+      it was.
+    unskippable: 0
+    expression: 2
+    speaker: 2
+  responses:
+  - responseTitle: Alright, thank you
+    dialogueData: {fileID: 11400000, guid: ce7b22c1af1241744adea61e873f99a3, type: 2}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Orlando1.1.1.1.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: ' I immediatly confessed what I had done.'
+    expression: 3
+    speaker: 4
+  - dialogue: 'Atleast you were honest about it, '
+    expression: 1
+    speaker: 0
+  responses:
+  - responseTitle: Were you easily distracted in the car when you were still driving?
+    dialogueData: {fileID: 11400000, guid: 6721d9e1614361345a64325c05454aa7, type: 2}

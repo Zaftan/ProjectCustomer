@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Bob1.0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'Hey Bob,
+
+      Thanks for making time for me.'
+    unskippable: 0
+    expression: 0
+    speaker: 0
+  - dialogue: I know its hard to fine time with your own buissness
+    unskippable: 0
+    expression: 1
+    speaker: 0
+  - dialogue: No Worries, I called Jim and explained the situation. He was more than
+      willing to start his shift earlier
+    unskippable: 0
+    expression: 1
+    speaker: 3
+  - dialogue: What would you like to know about that unfaithfull night?
+    unskippable: 0
+    expression: 1
+    speaker: 3
+  responses:
+  - responseTitle: How much did Veronica drink?
+    dialogueData: {fileID: 11400000, guid: 0b6d165e1734d60489560ca6ab9cba80, type: 2}
+  - responseTitle: Shall we talk about Orlando?
+    dialogueData: {fileID: 11400000, guid: fe99c7a0087ab60488e5a93062097f93, type: 2}
+  - responseTitle: Do you know how Fred's doing
+    dialogueData: {fileID: 11400000, guid: c9452fdfd5aa0e54fac0c0dc13ed1aff, type: 2}

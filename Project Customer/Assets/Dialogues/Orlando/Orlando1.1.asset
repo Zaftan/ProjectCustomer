@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Orlando1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: I had done it before, this time it didn't seem much different from
+      the last time, I felt like I could still easily drive
+    expression: 1
+    speaker: 4
+  - dialogue: The fact that Veronica really needed a ride home also puched me over
+      the edge, I was hesitant at first but felt like I could still drive.
+    expression: 1
+    speaker: 4
+  responses:
+  - responseTitle: Did you drive over the speed limit?
+    dialogueData: {fileID: 11400000, guid: 544a40a2a4a17fa48912c096ec6281ad, type: 2}

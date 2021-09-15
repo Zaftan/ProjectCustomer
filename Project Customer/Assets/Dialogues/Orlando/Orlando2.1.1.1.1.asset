@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Orlando2.1.1.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: I was pretty sure she died on impact, I immediatly called 911, but
+      I kind of knew it was already to late.
+    expression: 4
+    speaker: 4
+  responses:
+  - responseTitle: What did you do once they were there?
+    dialogueData: {fileID: 11400000, guid: 474c6f7e53ed3b142867470d72162ba1, type: 2}
+  - responseTitle: What did you do after you called 911?
+    dialogueData: {fileID: 11400000, guid: 426bf66abd0e3c6498f6bc36267b234f, type: 2}

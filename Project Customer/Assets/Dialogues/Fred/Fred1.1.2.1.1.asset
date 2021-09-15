@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Fred1.1.2.1.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: 'No problem.
+
+      Is there anything else you want to ask me?'
+    expression: 1
+    speaker: 2
+  responses:
+  - responseTitle: The glass we found is from Bob's bar, do you know Bob well?
+    dialogueData: {fileID: 11400000, guid: de1b6ede2b622594e8f8b8b0d5ab0292, type: 2}

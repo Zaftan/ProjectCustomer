@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Bob6
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: For Orlando, did he drink a lot?
+    unskippable: 0
+    expression: 1
+    speaker: 0
+  - dialogue: His tab is quite full, even for the rounds he gave to everyone. So
+      i would say so yes.
+    unskippable: 0
+    expression: 1
+    speaker: 3
+  - dialogue: It truly saddens me that i didn't know he was driving.
+    unskippable: 0
+    expression: 4
+    speaker: 3
+  - dialogue: I wish i kept an eye on how everyone arrived...
+    unskippable: 0
+    expression: 3
+    speaker: 3
+  - dialogue: It's fine Bob, you dont have to feel quilty.
+    unskippable: 0
+    expression: 1
+    speaker: 0
+  - dialogue: It's not your main job after all, so i allready find it quite commendable
+      you know it most of the times!
+    unskippable: 0
+    expression: 0
+    speaker: 0
+  - dialogue: Thanks Dennis that means a lot to me.
+    unskippable: 0
+    expression: 0
+    speaker: 0
+  responses:
+  - responseTitle: Thank you, that's all for now.
+    dialogueData: {fileID: 0}

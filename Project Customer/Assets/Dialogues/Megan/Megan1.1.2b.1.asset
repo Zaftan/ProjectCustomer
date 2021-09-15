@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
+  m_Name: Megan1.1.2b.1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - dialogue: Could I get Fred's number? He might know more about what happend before
+      the accident.
+    expression: 1
+    speaker: 0
+  - dialogue: Yes of course, here you go
+    expression: 1
+    speaker: 1
+  - dialogue: '*You now have Fred''s Phone number*'
+    expression: 1
+    speaker: 2
+  - dialogue: I hope this helps, is there anything else you'd like to know?
+    expression: 0
+    speaker: 1
+  responses:
+  - responseTitle: were there any pictures taken?
+    dialogueData: {fileID: 11400000, guid: 70bd8680946bcb641ad6723ffa9eeba3, type: 2}
