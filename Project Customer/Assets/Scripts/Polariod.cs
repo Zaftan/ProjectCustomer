@@ -18,7 +18,6 @@ public class Polariod : MonoBehaviour
 
     public void ShowPolariod(Sprite sprite)
     {
-        Time.timeScale = 0;
         image.sprite = sprite;
         rect.anchoredPosition = startPosition;
         StartCoroutine(ShowCo());
@@ -45,6 +44,5 @@ public class Polariod : MonoBehaviour
             }
             yield return null;
         }
-        Time.timeScale = 1;
     }
 }

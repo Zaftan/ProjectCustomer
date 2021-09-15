@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Paper0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'A newspaper covering the scene.
+  - dialogue: 'A newspaper covering the case.
 
-      It shows a detailed image of
-      the car wreck.'
+      It shows the offender behind
+      bars.'
+    unskippable: 0
     expression: 0
     speaker: 0
   responses: []

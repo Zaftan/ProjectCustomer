@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 138708317}
   - component: {fileID: 138708311}
   - component: {fileID: 138708313}
+  - component: {fileID: 138708315}
   m_Layer: 0
   m_Name: Megan
   m_TagString: Untagged
@@ -509,6 +510,41 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &138708315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138708308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbc16fa2285b4245b3fc1b1b6ea6533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 28e4b9710a9935944a837b14bf3597a3, type: 2}
+  responseEvents:
+  - name: Do you have Fred's phone number? he might know more about the evening itself
+    onResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Could you tell me what you could see on the scene?
+    onResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2000521333}
+          m_TargetAssemblyTypeName: Polariod, Assembly-CSharp
+          m_MethodName: ShowPolariod
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: abb38de6d915dd547bdfa840550dcae6,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!136 &138708316
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1090,7 +1126,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 242715003}
+      - m_Target: {fileID: 2115695384}
         m_TargetAssemblyTypeName: ScriptedMovement, Assembly-CSharp
         m_MethodName: ResetTargetPos
         m_Mode: 1
@@ -1102,7 +1138,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 242715003}
+      - m_Target: {fileID: 2115695384}
         m_TargetAssemblyTypeName: ScriptedMovement, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 3
@@ -1154,18 +1190,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2115695384}
-        m_TargetAssemblyTypeName: ScriptedMovement, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1502778133}
         m_TargetAssemblyTypeName: ScriptedMovement, Assembly-CSharp
         m_MethodName: Move
@@ -1180,11 +1204,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 121110953}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: Fade
-        m_Mode: 5
+        m_MethodName: FadeToBlack
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 502646071}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1699,6 +1723,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &502646071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9197381857210774083, guid: a2d4e01f7f3f69947903533984c78913,
+    type: 3}
+  m_PrefabInstance: {fileID: 657395667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550419306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,11 +1995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 181402384}
     m_Modifications:
-    - target: {fileID: 5516410250763312134, guid: a2d4e01f7f3f69947903533984c78913,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 0.02
-      objectReference: {fileID: 0}
     - target: {fileID: 5632794764669099404, guid: a2d4e01f7f3f69947903533984c78913,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2079,6 +2104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334449287256035466, guid: a2d4e01f7f3f69947903533984c78913,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2d4e01f7f3f69947903533984c78913, type: 3}
@@ -3977,9 +4007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbc16fa2285b4245b3fc1b1b6ea6533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c240220c62ae0ca4e8f5f74061a55100, type: 2}
+  data: {fileID: 11400000, guid: 602930c10b078e5419c9f44ba91342f1, type: 2}
   responseEvents:
-  - name: Alright, see you then.
+  - name: Call Orlando
     onResponse:
       m_PersistentCalls:
         m_Calls:
@@ -4031,6 +4061,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - name: Maybe later
+    onResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &1532305478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4043,9 +4077,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbc16fa2285b4245b3fc1b1b6ea6533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: f065ce0a865f2cb448ec55ca4303cabb, type: 2}
+  data: {fileID: 11400000, guid: 80c0068f90163c342bc807add8a4782f, type: 2}
   responseEvents:
-  - name: Thank you
+  - name: Call the police department
     onResponse:
       m_PersistentCalls:
         m_Calls:
@@ -4061,6 +4095,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - name: Maybe later
+    onResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1535751056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4688,7 +4726,20 @@ MonoBehaviour:
   useOutline: 1
   interactEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2000521333}
+        m_TargetAssemblyTypeName: Polariod, Assembly-CSharp
+        m_MethodName: ShowPolariod
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 370645254d90d574cbf57d1ef22431c6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   endEvent:
     m_PersistentCalls:
       m_Calls: []
