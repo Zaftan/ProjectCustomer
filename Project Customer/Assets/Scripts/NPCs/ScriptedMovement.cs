@@ -24,6 +24,25 @@ public class ScriptedMovement : MonoBehaviour
         StartStep();
     }
 
+    public void ResetTargetPos()
+    {
+        targetPos = 0;
+    }
+    public void SetPosition(int toAdd)
+    {
+        StartCoroutine(SetPositionCo(toAdd - 1));
+    }
+    private IEnumerator SetPositionCo(int toAdd)
+    {
+        yield return new WaitForSeconds(1.5f);
+        targetPos += toAdd;
+        //loop index over keyposition array
+        if (targetPos >= keyPositions.Length) targetPos -= keyPositions.Length;
+        if (targetPos < 0) targetPos += keyPositions.Length;
+        //set position
+        transform.position = keyPositions[targetPos].position;
+    }
+
     private void StartStep()
     {
         StartCoroutine(MoveToNextPos());

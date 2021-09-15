@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710d39d21487e05448ee5e07ee02d8a6, type: 3}
-  m_Name: Wallet1.0
+  m_Name: Glasses0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: it's the wallet from the scene, it belonged to Veronica
-    expression: 1
-    speaker: 0
-  - dialogue: '(you see a picture of Fred and Veronica) '
-    expression: 1
-    speaker: 0
-  - dialogue: That reminds me, I should call Megan about the case
+  - dialogue: 'Beer glasses that I got as a gift.
+
+      There was a similar glass
+      at the scene.
+
+      I don''t think I need these right now...
+
+'
     expression: 1
     speaker: 0
   responses: []

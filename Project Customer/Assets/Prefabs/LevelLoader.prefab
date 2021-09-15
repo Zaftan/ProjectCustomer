@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 8544023418034951906}
-  transitionTime: 0
+  transitionTime: 3
   label: {fileID: 1429772185}
 --- !u!1 &8544023418034951933
 GameObject:
