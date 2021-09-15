@@ -22,4 +22,18 @@ public class LevelLoader : MonoBehaviour
         //end fade
         transition.SetTrigger("Start");
     }
+
+    public void FadeToBlack(GameObject toActivate)
+    {
+        StartCoroutine(FadeToBlackCo(toActivate));
+    }
+
+    private IEnumerator FadeToBlackCo(GameObject toActivate)
+    {
+        label.text = "";
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0;
+        toActivate.SetActive(true);
+    }
 }

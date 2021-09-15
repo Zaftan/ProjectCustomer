@@ -15,19 +15,15 @@ MonoBehaviour:
   dialogue:
   - dialogue: 'Yes I think I can
 
-      *She shows you some pictures of the crash*
-      //insert polaroids
-
-      In the picture you can spot the beer glass you have
-      in your office '
+      In the picture you can spot the beer glass
+      you have in your office. '
+    unskippable: 0
     expression: 1
     speaker: 1
   - dialogue: Thank you, I am gonna get to the bottom of this.
+    unskippable: 0
     expression: 1
     speaker: 0
   responses:
   - responseTitle: I think you gave all that you need
     dialogueData: {fileID: 11400000, guid: 44fca1fb6f333fc47a3acdc50406e650, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []

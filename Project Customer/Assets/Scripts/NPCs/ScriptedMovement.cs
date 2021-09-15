@@ -34,7 +34,7 @@ public class ScriptedMovement : MonoBehaviour
     }
     private IEnumerator SetPositionCo(int toAdd)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         targetPos += toAdd;
         //loop index over keyposition array
         if (targetPos >= keyPositions.Length) targetPos -= keyPositions.Length;
