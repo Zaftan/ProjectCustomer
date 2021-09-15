@@ -16,7 +16,7 @@ MonoBehaviour:
   - dialogue: it's the wallet from the scene, it belonged to Veronica
     expression: 1
     speaker: 0
-  - dialogue: '(you see a picture of Megan and Veronica) '
+  - dialogue: '(you see a picture of Fred and Veronica) '
     expression: 1
     speaker: 0
   - dialogue: That reminds me, I should call Megan about the case
