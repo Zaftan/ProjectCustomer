@@ -14,32 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: I saw him in the city once, he frankly didnt look too good.
+    unskippable: 0
     expression: 2
     speaker: 3
   - dialogue: But if you imagine the relation he had to Veronica, its frankly understandable
       he is not doing good
+    unskippable: 0
     expression: 4
     speaker: 3
   - dialogue: 'That isnt good to hear.
 
       Ill make sure to check up on him later.'
+    unskippable: 0
     expression: 3
     speaker: 0
   - dialogue: Do you know how much he drank that night, by any chance?
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'Yeah, Fred drank a lot as well, but he isnt as much as a leightweight.
 
       I
       remember seeing him leave by bike.'
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: how do you know that?
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: He was cycling quite well for how much he drank
+    unskippable: 0
     expression: 1
     speaker: 3
   responses:
-  - responseTitle: Thank you, thats all for now.
-    dialogueData: {fileID: 0}
+  - responseTitle: About the driver
+    dialogueData: {fileID: 11400000, guid: fdb51aedd8b22db43a3103d5c2b13e0b, type: 2}

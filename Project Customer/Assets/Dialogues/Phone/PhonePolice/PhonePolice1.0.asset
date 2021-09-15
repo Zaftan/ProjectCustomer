@@ -18,29 +18,35 @@ MonoBehaviour:
       . . .
 
       . . .'
+    unskippable: 1
     expression: 1
     speaker: 0
   - dialogue: Hello, this is the Police, how can I help you?
+    unskippable: 0
     expression: 1
     speaker: 5
   - dialogue: Hey, this is dennis, the local investigator from around the corner.
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'Oh, hey Dennis!
 
       What do you need?'
+    unskippable: 0
     expression: 1
     speaker: 5
-  - dialogue: 'I''m working on the Veronica case right now.
-
-      I would like to
-      Contact the offender, do you have his phone number?'
+  - dialogue: I'm working on the Veronica case right now. I would like to Contact
+      the offender, do you have his phone number?
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'Sure do, here you go.
 
 
       *Obtained Orlando''s number*'
+    unskippable: 0
     expression: 1
     speaker: 0
-  responses: []
+  responses:
+  - responseTitle: Thank you
+    dialogueData: {fileID: 0}

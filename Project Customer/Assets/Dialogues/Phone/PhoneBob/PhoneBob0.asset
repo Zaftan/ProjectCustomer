@@ -18,11 +18,13 @@ MonoBehaviour:
       . . .
 
       . . .'
+    unskippable: 1
     expression: 0
     speaker: 3
   - dialogue: 'Hey Bob from Bob''s bar speaking!
 
       How may I help you?'
+    unskippable: 0
     expression: 0
     speaker: 3
   responses:

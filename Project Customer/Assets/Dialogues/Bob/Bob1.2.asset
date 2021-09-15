@@ -14,30 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: For Orlando, did he drink a lot?
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'His tab is quite full, even for the rounds he gave to everyone.
 
       So
       i would say so yes.'
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: It truly saddens me that i didn't know he was driving.
+    unskippable: 0
     expression: 4
     speaker: 3
   - dialogue: I wish i kept an eye on how everyone arrived...
+    unskippable: 0
     expression: 3
     speaker: 3
   - dialogue: It's fine Bob, you dont have to feel quilty.
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: It's not your main job after all, so i allready find it quite commendable
       you know it most of the times!
+    unskippable: 0
     expression: 0
     speaker: 0
   - dialogue: Thanks Dennis that means a lot to me.
+    unskippable: 0
+    expression: 0
+    speaker: 3
+  - dialogue: I know enough about Orlando for now.
+    unskippable: 0
     expression: 0
     speaker: 0
   responses:
-  - responseTitle: I know enough about Orlando for now.
-    dialogueData: {fileID: 11400000, guid: 5c1c8738288ef424d9d20632adf84c36, type: 2}
+  - responseTitle: About Fred
+    dialogueData: {fileID: 11400000, guid: c8cf306cb0ef237408efbd2d47673115, type: 2}

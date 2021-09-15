@@ -18,9 +18,11 @@ MonoBehaviour:
       . . .
 
       . . .'
+    unskippable: 1
     expression: 1
     speaker: 2
   - dialogue: Hello, you're speaking to Fred, who's this?
+    unskippable: 0
     expression: 1
     speaker: 2
   responses:

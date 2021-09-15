@@ -13,36 +13,38 @@ MonoBehaviour:
   m_Name: PhoneBob1.0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'Hey Dennis
+  - dialogue: 'Hey Dennis. Yeah of course you can!
 
-      Yeah of course you can!
-
-      The whole accident
-      still makes me very sad when i think about it'
+      The whole accident still
+      makes me very sad when i think about it'
+    unskippable: 0
     expression: 2
     speaker: 3
   - dialogue: When would you like me to come over?
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: You can come over what fits you best, I'll be in my office untill 6
       tonight.
+    unskippable: 0
     expression: 1
     speaker: 0
-  - dialogue: 'Ah okay.
-
-      Well, I''m allready in my bar so let me call some
-      employees to take over the preparations for tonight.'
+  - dialogue: Ah okay. Well, I'm allready in my bar so let me call some employees
+      to take over the preparations for tonight.
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: 'That''s fine.
 
       Sorry for the hassle Bob.'
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: 'No worries, its fine.
 
       This might help me give some closure
       as well'
+    unskippable: 0
     expression: 1
     speaker: 3
   responses: []

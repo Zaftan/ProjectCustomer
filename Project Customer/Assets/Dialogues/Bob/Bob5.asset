@@ -14,29 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: How much did Veronica drink that night?
+    unskippable: 0
     expression: 1
     speaker: 0
   - dialogue: Hmmm, I served a lot of people that night but i checked the bills the
       other day.
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: 'Veronica had quite some drinks, she seemed far from sober.
 
 '
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: I'm quite sure she played beer pong with Orlando and Fred that night.
+    unskippable: 0
     expression: 1
     speaker: 3
   - dialogue: Ah beer pong, I used to be a god back in the days.
+    unskippable: 0
     expression: 0
     speaker: 0
   - dialogue: Well I challenge you for a match for when the case is closed.
+    unskippable: 0
     expression: 0
     speaker: 3
   - dialogue: As long as you promise to not drive home!
+    unskippable: 0
     expression: 4
     speaker: 3
   responses:
-  - responseTitle: About the Driver
-    dialogueData: {fileID: 11400000, guid: 3713862d70940284fbeaa1e27e51b674, type: 2}
+  - responseTitle: Thank you, that's all for now.
+    dialogueData: {fileID: 0}

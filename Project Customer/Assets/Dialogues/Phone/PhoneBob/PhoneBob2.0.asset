@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: PhoneBob2.0
   m_EditorClassIdentifier: 
   dialogue:
-  - dialogue: 'Oh hey Dennis,
-
-      Yeah i can come over, this whole situation still
-      saddens me'
+  - dialogue: Oh hey Dennis, yeah i can come over, this whole situation still saddens
+      me
+    unskippable: 0
     expression: 2
     speaker: 3
   - dialogue: 'I can understand that.
 
       Dealing with something like this never
       is easy'
+    unskippable: 0
     expression: 2
     speaker: 0
   - dialogue: 'I''m sorry to make you revisit this.
 
 '
+    unskippable: 0
     expression: 2
     speaker: 0
   - dialogue: 'Its fine.
@@ -35,6 +36,7 @@ MonoBehaviour:
       This might help me give some closure
 
 '
+    unskippable: 0
     expression: 2
     speaker: 3
   responses: []

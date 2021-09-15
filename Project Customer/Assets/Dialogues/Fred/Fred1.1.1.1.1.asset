@@ -15,10 +15,12 @@ MonoBehaviour:
   dialogue:
   - dialogue: After the game of beer pong I was pretty drunk, but I can still remember
       pretty much everything from the night
+    unskippable: 0
     expression: 1
     speaker: 2
   - dialogue: Veronica on the other hand looked way more wasted then I did, she really
       did need a ride home and I  thought she would just get a taxi...
+    unskippable: 0
     expression: 2
     speaker: 2
   responses:

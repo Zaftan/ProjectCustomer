@@ -14,14 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - dialogue: Yes of course, here you go
+    unskippable: 0
     expression: 1
     speaker: 1
   - dialogue: '*You now have Fred''s Phone number*'
+    unskippable: 0
     expression: 1
     speaker: 2
   responses:
   - responseTitle: How did you find out that it happened?
-    dialogueData: {fileID: 11400000, guid: e7aa222971ab777468a294f503bd8d84, type: 2}
-    responseEvent:
-      m_PersistentCalls:
-        m_Calls: []
+    dialogueData: {fileID: 11400000, guid: 28e4b9710a9935944a837b14bf3597a3, type: 2}
